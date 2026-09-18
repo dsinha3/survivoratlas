@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survivor Atlas — 2026 NFL Win Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topo" aria-hidden="true"></div>
+    <header class="mast">
+      <div class="brand">
+        <p class="eyebrow">2026 Survivor · A different team every week · Path to W18</p>
+        <h1>Survivor Atlas</h1>
+        <p class="lede">
+          Map your route to the end. Each week needs a new team — no repeats.
+          Weeks 9 and 12–16 take two teams.
+        </p>
+      </div>
+      <div class="controls">
+        <div class="field">
+          <span>Sort rows</span>
+          <div class="seg" role="group" aria-label="Sort teams by probability">
+            <button type="button" data-sort="desc" class="is-on">High → low</button>
+            <button type="button" data-sort="asc">Low → high</button>
+          </div>
+        </div>
+        <p class="slate" id="slate">0 / 23 path</p>
+        <div class="refresh">
+          <button type="button" class="ghost" id="refresh-odds">Re-pull odds</button>
+          <span id="odds-status">Lines from last scrape</span>
+        </div>
+        <button type="button" class="ghost" id="clear-picks">Clear picks</button>
+      </div>
+    </header>
+
+    <section class="path-wrap">
+      <div class="path-label">
+        <span>Your path</span>
+        <span id="path-gaps"></span>
+      </div>
+      <nav class="path" id="path" aria-label="Survivor path from week 2 to 18"></nav>
+    </section>
+
+    <main id="map" class="map" aria-label="Survivor pick grid"></main>
+
+    <footer class="colophon">
+      <p>
+        Build the whole path now: click a grid cell to place that team on that
+        week. Used teams are crossed out so they cannot be reused. Click a team
+        on the path to remove it. Click a week on the path to jump there.
+      </p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

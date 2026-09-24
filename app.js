@@ -34,27 +34,51 @@ const TEAM_COLORS = {
 };
 
 const STORAGE_KEY = "survivoratlas-picks-2026-v2";
+const ODDS_CACHE_KEY = "survivoratlas-odds-2026";
 const DOUBLE_WEEKS = new Set([9, 12, 13, 14, 15, 16]);
-const data = window.ATLAS_DATA;
-const weekNumbers = Object.keys(data.weeks)
-  .map(Number)
-  .sort((a, b) => a - b);
 
-const teams = [...data.weeks[weekNumbers[0]]]
-  .map((row) => ({
-    abbr: row.abbr,
-    team: row.team,
-    color: TEAM_COLORS[row.abbr] || "#6b6456",
-  }))
-  .sort((a, b) => a.team.localeCompare(b.team));
+let data;
+let weekNumbers;
+let teams;
+let byTeamWeek;
 
-const byTeamWeek = {};
-for (const week of weekNumbers) {
-  for (const row of data.weeks[week]) {
-    if (!byTeamWeek[row.abbr]) byTeamWeek[row.abbr] = {};
-    byTeamWeek[row.abbr][week] = row;
+function readCachedOdds() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(ODDS_CACHE_KEY) || "null");
+    return parsed?.weeks ? parsed : null;
+  } catch {
+    return null;
   }
 }
+
+function newerOdds(a, b) {
+  if (!a) return b;
+  if (!b) return a;
+  return (a.updatedAt || "") >= (b.updatedAt || "") ? a : b;
+}
+
+function hydrate(payload) {
+  data = payload;
+  weekNumbers = Object.keys(data.weeks)
+    .map(Number)
+    .sort((a, b) => a - b);
+  teams = [...data.weeks[weekNumbers[0]]]
+    .map((row) => ({
+      abbr: row.abbr,
+      team: row.team,
+      color: TEAM_COLORS[row.abbr] || "#6b6456",
+    }))
+    .sort((a, b) => a.team.localeCompare(b.team));
+  byTeamWeek = {};
+  for (const week of weekNumbers) {
+    for (const row of data.weeks[week]) {
+      if (!byTeamWeek[row.abbr]) byTeamWeek[row.abbr] = {};
+      byTeamWeek[row.abbr][week] = row;
+    }
+  }
+}
+
+hydrate(newerOdds(window.ATLAS_DATA, readCachedOdds()));
 
 const META_KEYS = [
   { key: "games", label: "Gms", title: "Remaining pickable weeks" },
@@ -467,12 +491,25 @@ async function refreshOdds() {
   status.textContent = "Pulling ESPN and re-calculating…";
   try {
     const res = await fetch("/api/refresh", { method: "POST" });
-    const payload = await res.json();
-    if (!res.ok || !payload.ok) {
+    const text = await res.text();
+    let payload;
+    try {
+      payload = JSON.parse(text);
+    } catch {
+      throw new Error(
+        res.status === 404
+          ? "Refresh API is not deployed yet."
+          : "Refresh failed. Try again in a moment."
+      );
+    }
+    if (!res.ok || !payload.ok || !payload.weeks) {
       throw new Error(payload.error || "Refresh failed");
     }
-    status.textContent = "Updated. Reloading…";
-    window.location.reload();
+    localStorage.setItem(ODDS_CACHE_KEY, JSON.stringify(payload));
+    hydrate(payload);
+    showUpdated(data.updatedAt);
+    renderAll();
+    btn.disabled = false;
   } catch (err) {
     status.textContent = err.message || "Could not refresh odds";
     btn.disabled = false;

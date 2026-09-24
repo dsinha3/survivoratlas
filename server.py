@@ -51,8 +51,10 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_json(404, {"error": "Not found"})
             return
         try:
-            result = refresh_odds.refresh()
-            self.send_json(200, result)
+            refresh_odds.refresh()
+            payload = json.loads((ROOT / "odds.json").read_text())
+            payload["ok"] = True
+            self.send_json(200, payload)
         except Exception as exc:
             self.send_json(500, {"ok": False, "error": str(exc)})
 

@@ -97,6 +97,13 @@ h1 {
   color: var(--gold-dim);
 }
 
+.cal-note {
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--mute);
+  font-size: 11px;
+}
+
 .seg {
   display: flex;
   border: 1px solid var(--line);
@@ -154,9 +161,57 @@ h1 {
   color: var(--gold);
 }
 
+.used-wrap {
+  padding-top: 0;
+  padding-bottom: 14px;
+}
+
+.used-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.used-row select {
+  min-width: 200px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--cream);
+  padding: 8px 10px;
+}
+
+.used-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.used-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  background: #241816;
+  color: var(--cream);
+  padding: 4px 8px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+
+.used-chip button {
+  border: 0;
+  background: transparent;
+  color: #e07068;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+}
+
 .map,
 .colophon,
-.path-wrap {
+.path-wrap,
+.used-wrap {
   position: relative;
   padding-left: 28px;
   padding-right: 28px;
@@ -558,6 +613,7 @@ tr.is-used .team-cell {
   }
 
   .path-wrap,
+  .used-wrap,
   .map,
   .colophon {
     padding-left: 16px;

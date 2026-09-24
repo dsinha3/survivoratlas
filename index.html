@@ -19,11 +19,20 @@
         <p class="eyebrow">2026 Survivor · A different team every week · Path to W18</p>
         <h1>Survivor Atlas</h1>
         <p class="lede">
-          Map your route to the end. Each week needs a new team — no repeats.
-          Weeks 9 and 12–16 take two teams.
+          Map the remaining path. Week 2 is over. The current week flips every
+          Tuesday; you can also step it by hand. Mark teams you already used.
         </p>
       </div>
       <div class="controls">
+        <div class="field">
+          <span>Current week</span>
+          <div class="seg" role="group" aria-label="Current survivor week">
+            <button type="button" id="week-prev" aria-label="Previous week">‹</button>
+            <button type="button" id="week-auto">W3</button>
+            <button type="button" id="week-next" aria-label="Next week">›</button>
+          </div>
+          <span class="cal-note" id="week-cal-note"></span>
+        </div>
         <div class="field">
           <span>Sort rows</span>
           <div class="seg" role="group" aria-label="Sort teams by probability">
@@ -40,21 +49,33 @@
       </div>
     </header>
 
+    <section class="used-wrap">
+      <div class="path-label">
+        <span>Already used</span>
+        <span>Teams you already played. They stay crossed out on the remaining path.</span>
+      </div>
+      <div class="used-row">
+        <select id="used-select" aria-label="Add an already used team"></select>
+        <button type="button" class="ghost" id="used-add">Add team</button>
+        <div class="used-chips" id="used-chips"></div>
+      </div>
+    </section>
+
     <section class="path-wrap">
       <div class="path-label">
         <span>Your path</span>
         <span id="path-gaps"></span>
       </div>
-      <nav class="path" id="path" aria-label="Survivor path from week 2 to 18"></nav>
+      <nav class="path" id="path" aria-label="Survivor path from the current week to 18"></nav>
     </section>
 
     <main id="map" class="map" aria-label="Survivor pick grid"></main>
 
     <footer class="colophon">
       <p>
-        Build the whole path now: click a grid cell to place that team on that
-        week. Used teams are crossed out so they cannot be reused. Click a team
-        on the path to remove it. Click a week on the path to jump there.
+        Path and grid start at the current week. Add already-used teams so they
+        cannot be picked again. Click a week chip to jump there; click a path
+        team to remove it.
       </p>
     </footer>
 

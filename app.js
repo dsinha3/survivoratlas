@@ -35,7 +35,55 @@ const TEAM_COLORS = {
 
 const STORAGE_KEY = "survivoratlas-picks-2026-v2";
 const ODDS_CACHE_KEY = "survivoratlas-odds-2026";
+const WEEK_OVERRIDE_KEY = "survivoratlas-week-override-2026";
+const USED_PRIOR_KEY = "survivoratlas-used-prior-2026";
 const DOUBLE_WEEKS = new Set([9, 12, 13, 14, 15, 16]);
+
+// Tuesday starts. W3 = Sep 22 2026, then +7 days.
+const WEEK_STARTS = {
+  1: "2026-09-08",
+  2: "2026-09-15",
+  3: "2026-09-22",
+  4: "2026-09-29",
+  5: "2026-10-06",
+  6: "2026-10-13",
+  7: "2026-10-20",
+  8: "2026-10-27",
+  9: "2026-11-03",
+  10: "2026-11-10",
+  11: "2026-11-17",
+  12: "2026-11-24",
+  13: "2026-12-01",
+  14: "2026-12-08",
+  15: "2026-12-15",
+  16: "2026-12-22",
+  17: "2026-12-29",
+  18: "2027-01-05",
+};
+
+function parseYmd(ymd) {
+  const [y, m, d] = ymd.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function calendarWeek(now = new Date()) {
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  let current = 1;
+  for (const week of Object.keys(WEEK_STARTS)
+    .map(Number)
+    .sort((a, b) => a - b)) {
+    if (today >= parseYmd(WEEK_STARTS[week])) current = week;
+  }
+  return Math.min(18, Math.max(2, current));
+}
+
+function formatWeekStart(week) {
+  return parseYmd(WEEK_STARTS[week]).toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
+}
 
 let data;
 let weekNumbers;
@@ -88,13 +136,46 @@ const META_KEYS = [
   { key: "over80", label: "80+", title: "Remaining weeks at least 80% to win" },
 ];
 
+function loadWeekOverride() {
+  const n = Number(localStorage.getItem(WEEK_OVERRIDE_KEY));
+  return n >= 2 && n <= 18 ? n : null;
+}
+
+function loadUsedPrior() {
+  try {
+    const list = JSON.parse(localStorage.getItem(USED_PRIOR_KEY) || "[]");
+    return list.filter((abbr) => teams.some((t) => t.abbr === abbr));
+  } catch {
+    return [];
+  }
+}
+
+const weekOverride = loadWeekOverride();
+const startWeek = weekOverride || calendarWeek();
+
 const state = {
   picks: loadPicks(),
-  sortWeek: data.currentWeek,
+  usedPrior: loadUsedPrior(),
+  weekOverride,
+  sortWeek: startWeek,
   sortDir: "desc",
   sortMeta: "",
-  focusWeek: data.currentWeek,
+  focusWeek: startWeek,
 };
+
+function activeWeek() {
+  return state.weekOverride || calendarWeek();
+}
+
+function liveWeeks() {
+  return weekNumbers.filter((week) => week >= activeWeek());
+}
+
+function clampView() {
+  const live = liveWeeks();
+  if (!live.includes(state.sortWeek)) state.sortWeek = live[0] || activeWeek();
+  if (!live.includes(state.focusWeek)) state.focusWeek = live[0] || activeWeek();
+}
 
 function weekCapacity(week) {
   return DOUBLE_WEEKS.has(week) ? 2 : 1;
@@ -110,8 +191,12 @@ function allPicks() {
   return weekNumbers.flatMap((week) => weekPicks(week));
 }
 
+function livePicks() {
+  return liveWeeks().flatMap((week) => weekPicks(week));
+}
+
 function totalSlots() {
-  return weekNumbers.reduce((sum, week) => sum + weekCapacity(week), 0);
+  return liveWeeks().reduce((sum, week) => sum + weekCapacity(week), 0);
 }
 
 function loadPicks() {
@@ -145,8 +230,12 @@ function savePicks() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state.picks));
 }
 
+function saveUsedPrior() {
+  localStorage.setItem(USED_PRIOR_KEY, JSON.stringify(state.usedPrior));
+}
+
 function usedTeams() {
-  return new Set(allPicks());
+  return new Set([...state.usedPrior, ...allPicks()]);
 }
 
 function pickWeek(abbr) {
@@ -162,6 +251,8 @@ function isFinal(cell) {
 }
 
 function canPick(abbr, week) {
+  if (week < activeWeek()) return false;
+  if (state.usedPrior.includes(abbr)) return false;
   const cell = byTeamWeek[abbr][week];
   if (isBye(cell) || isFinal(cell)) return false;
   const usedIn = pickWeek(abbr);
@@ -184,8 +275,8 @@ function logoUrl(abbr) {
 }
 
 function remainingCells(abbr) {
-  if (pickWeek(abbr)) return [];
-  return weekNumbers
+  if (state.usedPrior.includes(abbr) || pickWeek(abbr)) return [];
+  return liveWeeks()
     .map((week) => ({ week, cell: byTeamWeek[abbr][week] }))
     .filter(({ cell }) => !isBye(cell) && !isFinal(cell));
 }
@@ -233,7 +324,10 @@ function sortedTeams() {
 }
 
 function openSlots() {
-  return weekNumbers.reduce((sum, week) => sum + Math.max(0, weekCapacity(week) - weekPicks(week).length), 0);
+  return liveWeeks().reduce(
+    (sum, week) => sum + Math.max(0, weekCapacity(week) - weekPicks(week).length),
+    0
+  );
 }
 
 function pickProb(abbr, week) {
@@ -241,14 +335,15 @@ function pickProb(abbr, week) {
 }
 
 function renderPath() {
-  const n = allPicks().length;
+  const live = liveWeeks();
+  const n = livePicks().length;
   const slots = totalSlots();
   const gaps = openSlots();
   document.querySelector("#slate").textContent = `${n} / ${slots} path`;
   document.querySelector("#path-gaps").textContent =
     gaps === 0 ? "Path complete" : `${gaps} slot${gaps === 1 ? "" : "s"} left`;
 
-  document.querySelector("#path").innerHTML = weekNumbers
+  document.querySelector("#path").innerHTML = live
     .map((week, i) => {
       const picks = weekPicks(week);
       const cap = weekCapacity(week);
@@ -270,7 +365,7 @@ function renderPath() {
       }).join("");
       return `
         ${i ? `<span class="path-join" aria-hidden="true"></span>` : ""}
-        <div class="node ${filled ? "is-filled" : ""} ${partial ? "is-partial" : ""} ${DOUBLE_WEEKS.has(week) ? "is-double" : ""} ${week === state.focusWeek ? "is-focus" : ""} ${week === data.currentWeek ? "is-now" : ""}">
+        <div class="node ${filled ? "is-filled" : ""} ${partial ? "is-partial" : ""} ${DOUBLE_WEEKS.has(week) ? "is-double" : ""} ${week === state.focusWeek ? "is-focus" : ""} ${week === activeWeek() ? "is-now" : ""}">
           <button type="button" class="node-week" data-jump-week="${week}">
             W${week}${DOUBLE_WEEKS.has(week) ? " · 2x" : ""}
           </button>
@@ -285,11 +380,12 @@ function renderMap() {
   const used = usedTeams();
   const rows = sortedTeams();
   const arrow = state.sortDir === "desc" ? "↓" : "↑";
+  const live = liveWeeks();
 
-  const head = weekNumbers
+  const head = live
     .map((week) => {
       const on = !state.sortMeta && week === state.sortWeek ? "is-sorted" : "";
-      const now = week === data.currentWeek ? "is-now" : "";
+      const now = week === activeWeek() ? "is-now" : "";
       const focus = week === state.focusWeek ? "is-focus" : "";
       const dbl = DOUBLE_WEEKS.has(week) ? "is-double" : "";
       const picks = weekPicks(week);
@@ -327,9 +423,11 @@ function renderMap() {
   const body = rows
     .map((team) => {
       const usedIn = pickWeek(team.abbr);
+      const prior = state.usedPrior.includes(team.abbr);
       const dead = used.has(team.abbr);
       const stats = teamStats(team.abbr);
-      const cells = weekNumbers
+      const usedNote = usedIn ? `used W${usedIn}` : prior ? "already used" : team.team;
+      const cells = live
         .map((week) => {
           const cell = byTeamWeek[team.abbr][week];
           const pickHere = weekPicks(week).includes(team.abbr);
@@ -381,7 +479,7 @@ function renderMap() {
               <img class="logo" src="${logoUrl(team.abbr)}" alt="" width="22" height="22" />
               <span class="team-name">
                 <span class="abbr">${team.abbr}</span>
-                <span class="used-note">${usedIn ? `used W${usedIn}` : team.team}</span>
+                <span class="used-note">${usedNote}</span>
               </span>
             </div>
           </th>
@@ -435,6 +533,76 @@ function renderMap() {
   sync(metaScroll, weekScroll);
 }
 
+function renderWeekBar() {
+  const week = activeWeek();
+  const auto = state.weekOverride == null;
+  document.querySelector("#week-auto").textContent = `W${week}`;
+  document.querySelector("#week-auto").classList.toggle("is-on", auto);
+  document.querySelector("#week-prev").disabled = week <= 2;
+  document.querySelector("#week-next").disabled = week >= 18;
+  document.querySelector("#week-cal-note").textContent = auto
+    ? `Auto · started ${formatWeekStart(week)}`
+    : `Manual · started ${formatWeekStart(week)}`;
+}
+
+function renderUsed() {
+  const chips = document.querySelector("#used-chips");
+  chips.innerHTML = state.usedPrior.length
+    ? state.usedPrior
+        .map(
+          (abbr) => `
+        <span class="used-chip">
+          <img src="${logoUrl(abbr)}" alt="" width="14" height="14" />
+          ${abbr}
+          <button type="button" data-unuse="${abbr}" aria-label="Remove ${abbr} from used">×</button>
+        </span>
+      `
+        )
+        .join("")
+    : `<span class="cal-note">None yet</span>`;
+
+  const select = document.querySelector("#used-select");
+  select.innerHTML =
+    `<option value="">Add a used team…</option>` +
+    teams
+      .filter((t) => !state.usedPrior.includes(t.abbr))
+      .map((t) => `<option value="${t.abbr}">${t.abbr} — ${t.team}</option>`)
+      .join("");
+}
+
+function setActiveWeek(week) {
+  if (week == null) {
+    state.weekOverride = null;
+    localStorage.removeItem(WEEK_OVERRIDE_KEY);
+  } else {
+    state.weekOverride = Math.min(18, Math.max(2, week));
+    localStorage.setItem(WEEK_OVERRIDE_KEY, String(state.weekOverride));
+  }
+  clampView();
+  renderAll();
+}
+
+function addUsedPrior(abbr) {
+  if (!abbr || state.usedPrior.includes(abbr)) return;
+  state.usedPrior = [...state.usedPrior, abbr];
+  for (const week of liveWeeks()) {
+    const picks = weekPicks(week);
+    if (!picks.includes(abbr)) continue;
+    const next = picks.filter((name) => name !== abbr);
+    if (next.length) state.picks[week] = next;
+    else delete state.picks[week];
+  }
+  saveUsedPrior();
+  savePicks();
+  renderAll();
+}
+
+function removeUsedPrior(abbr) {
+  state.usedPrior = state.usedPrior.filter((name) => name !== abbr);
+  saveUsedPrior();
+  renderAll();
+}
+
 function setPick(abbr, week) {
   const current = weekPicks(week);
   if (current.includes(abbr)) {
@@ -466,6 +634,9 @@ function jumpToWeek(week) {
 }
 
 function renderAll() {
+  clampView();
+  renderWeekBar();
+  renderUsed();
   renderPath();
   renderMap();
   document.querySelectorAll("[data-sort]").forEach((btn) => {
@@ -507,6 +678,7 @@ async function refreshOdds() {
     }
     localStorage.setItem(ODDS_CACHE_KEY, JSON.stringify(payload));
     hydrate(payload);
+    clampView();
     showUpdated(data.updatedAt);
     renderAll();
     btn.disabled = false;
@@ -526,6 +698,24 @@ function bind() {
 
   document.querySelector("#refresh-odds").addEventListener("click", () => {
     refreshOdds();
+  });
+
+  document.querySelector("#week-prev").addEventListener("click", () => {
+    setActiveWeek(activeWeek() - 1);
+  });
+  document.querySelector("#week-next").addEventListener("click", () => {
+    setActiveWeek(activeWeek() + 1);
+  });
+  document.querySelector("#week-auto").addEventListener("click", () => {
+    setActiveWeek(null);
+  });
+
+  document.querySelector("#used-add").addEventListener("click", () => {
+    addUsedPrior(document.querySelector("#used-select").value);
+  });
+  document.querySelector("#used-chips").addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-unuse]");
+    if (btn) removeUsedPrior(btn.dataset.unuse);
   });
 
   document.querySelector("#clear-picks").addEventListener("click", () => {

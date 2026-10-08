@@ -243,7 +243,9 @@ function pickWeek(abbr) {
 }
 
 function isBye(cell) {
-  return !cell || cell.status === "Bye" || cell.winProbability == null;
+  if (!cell) return true;
+  if (cell.status === "Bye") return true;
+  return cell.opponent === "BYE" || cell.opponentAbbr === "BYE";
 }
 
 function isFinal(cell) {
@@ -283,9 +285,11 @@ function remainingCells(abbr) {
 
 function teamStats(abbr) {
   const live = remainingCells(abbr);
-  const probs = live.map(({ cell }) => cell.winProbability);
+  const probs = live.map(({ cell }) => cell.winProbability).filter((p) => p != null);
   const best = live.reduce((top, row) => {
-    if (!top || row.cell.winProbability > top.cell.winProbability) return row;
+    const p = row.cell.winProbability;
+    if (p == null) return top;
+    if (!top || p > top.cell.winProbability) return row;
     return top;
   }, null);
   return {
@@ -312,13 +316,16 @@ function sortedTeams() {
     const week = state.sortWeek;
     const ac = byTeamWeek[a.abbr][week];
     const bc = byTeamWeek[b.abbr][week];
+    const aBye = isBye(ac);
+    const bBye = isBye(bc);
+    if (aBye && bBye) return a.abbr.localeCompare(b.abbr);
+    if (aBye) return 1;
+    if (bBye) return -1;
     const ap = ac?.winProbability;
     const bp = bc?.winProbability;
-    const aDead = isBye(ac);
-    const bDead = isBye(bc);
-    if (aDead && bDead) return a.abbr.localeCompare(b.abbr);
-    if (aDead) return 1;
-    if (bDead) return -1;
+    if (ap == null && bp == null) return a.abbr.localeCompare(b.abbr);
+    if (ap == null) return 1;
+    if (bp == null) return -1;
     return dir === "asc" ? ap - bp : bp - ap;
   });
 }

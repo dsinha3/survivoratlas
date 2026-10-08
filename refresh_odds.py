@@ -19,17 +19,72 @@ UA = (
 )
 
 
-def get_json(url: str, retries: int = 3):
+def get_json(url: str, retries: int = 3, extra_headers=None):
     last = None
+    headers = {"User-Agent": UA, "Accept": "application/json"}
+    if extra_headers:
+        headers.update(extra_headers)
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+            req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req, timeout=30) as resp:
                 return json.loads(resp.read().decode())
         except Exception as exc:
             last = exc
             time.sleep(0.35 * (attempt + 1))
     raise last
+
+
+AN_HEADERS = {
+    "Origin": "https://www.actionnetwork.com",
+    "Referer": "https://www.actionnetwork.com/",
+}
+AN_ABBR = {"JAC": "JAX", "LA": "LAR", "WAS": "WSH"}
+
+
+def espn_abbr(abbr):
+    return AN_ABBR.get(abbr or "", abbr)
+
+
+def pick_action_ml(odds):
+    games = [
+        o
+        for o in (odds or [])
+        if o.get("type") == "game"
+        and parse_ml(o.get("ml_home")) is not None
+        and parse_ml(o.get("ml_away")) is not None
+    ]
+    if not games:
+        return None, None, ""
+    preferred = next((o for o in games if o.get("book_id") == 68), None)
+    if not preferred:
+        preferred = next((o for o in games if o.get("book_id") == 15), None) or games[0]
+    book = "DraftKings" if preferred.get("book_id") == 68 else "Action Network"
+    return preferred.get("ml_home"), preferred.get("ml_away"), book
+
+
+def fetch_action_week(week: int):
+    url = (
+        "https://api.actionnetwork.com/web/v1/scoreboard/nfl"
+        f"?week={week}&season={SEASON}&seasonType=reg"
+    )
+    return week, get_json(url, extra_headers=AN_HEADERS)
+
+
+def load_action_lines():
+    lines = {}
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        futs = [pool.submit(fetch_action_week, week) for week in range(1, 19)]
+        for fut in as_completed(futs):
+            week, data = fut.result()
+            for game in data.get("games") or []:
+                teams = {t.get("id"): espn_abbr(t.get("abbr")) for t in (game.get("teams") or [])}
+                home = teams.get(game.get("home_team_id"))
+                away = teams.get(game.get("away_team_id"))
+                ml_home, ml_away, book = pick_action_ml(game.get("odds"))
+                if home and away and ml_home is not None and ml_away is not None:
+                    lines[(week, home, away)] = (ml_home, ml_away, book)
+    return lines
 
 
 def parse_ml(value):
@@ -277,6 +332,8 @@ def refresh():
             event_id, payload = fut.result()
             odds_by_id[event_id] = payload
 
+    action_lines = load_action_lines()
+
     need_pred = []
     for ev in events:
         payload = odds_by_id.get(ev["id"]) or {}
@@ -288,8 +345,14 @@ def refresh():
             book = (odds.get("provider") or {}).get("name") or ""
             ml_home, ml_away = two_sided_ml(payload)
         if ml_home is None or ml_away is None:
-            need_pred.append(ev["id"])
-            ml_home = ml_away = None
+            home_abbr = ((ev["home"] or {}).get("team") or {}).get("abbreviation")
+            away_abbr = ((ev["away"] or {}).get("team") or {}).get("abbreviation")
+            alt = action_lines.get((ev["week"], home_abbr, away_abbr))
+            if alt:
+                ml_home, ml_away, book = alt
+            else:
+                need_pred.append(ev["id"])
+                ml_home = ml_away = None
         add_rows(
             row_from_sides(
                 ev["week"],
@@ -403,7 +466,7 @@ def refresh():
         "season": SEASON,
         "currentWeek": now_week,
         "updatedAt": datetime.now(timezone.utc).isoformat(),
-        "source": "DraftKings moneylines (de-vig) when posted; ESPN FPI otherwise",
+        "source": "DraftKings moneylines (de-vig); ESPN FPI only if no market line",
         "weeks": weeks,
     }
     (ROOT / "odds.json").write_text(json.dumps(payload))

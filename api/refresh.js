@@ -2,12 +2,12 @@ const SEASON = 2026;
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
-async function getJson(url, retries = 3) {
+async function getJson(url, retries = 3, extraHeaders = {}) {
   let last;
   for (let i = 0; i < retries; i += 1) {
     try {
       const res = await fetch(url, {
-        headers: { "User-Agent": UA, Accept: "application/json" },
+        headers: { "User-Agent": UA, Accept: "application/json", ...extraHeaders },
       });
       if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
       return await res.json();
@@ -17,6 +17,53 @@ async function getJson(url, retries = 3) {
     }
   }
   throw last;
+}
+
+const AN_HEADERS = {
+  Origin: "https://www.actionnetwork.com",
+  Referer: "https://www.actionnetwork.com/",
+};
+const AN_ABBR = { JAC: "JAX", LA: "LAR", WAS: "WSH" };
+
+function espnAbbr(abbr) {
+  return AN_ABBR[abbr] || abbr;
+}
+
+function pickActionMl(odds) {
+  const games = (odds || []).filter(
+    (o) => o.type === "game" && parseMl(o.ml_home) != null && parseMl(o.ml_away) != null
+  );
+  if (!games.length) return [null, null, ""];
+  const preferred =
+    games.find((o) => o.book_id === 68) || games.find((o) => o.book_id === 15) || games[0];
+  const book = preferred.book_id === 68 ? "DraftKings" : "Action Network";
+  return [preferred.ml_home, preferred.ml_away, book];
+}
+
+async function loadActionLines(weekNums) {
+  const lines = {};
+  await mapPool(weekNums, 6, async (week) => {
+    try {
+      const data = await getJson(
+        `https://api.actionnetwork.com/web/v1/scoreboard/nfl?week=${week}&season=${SEASON}&seasonType=reg`,
+        3,
+        AN_HEADERS
+      );
+      for (const game of data.games || []) {
+        const teams = {};
+        for (const t of game.teams || []) teams[t.id] = espnAbbr(t.abbr);
+        const home = teams[game.home_team_id];
+        const away = teams[game.away_team_id];
+        const [mlHome, mlAway, book] = pickActionMl(game.odds);
+        if (home && away && mlHome != null && mlAway != null) {
+          lines[`${week}:${home}:${away}`] = [mlHome, mlAway, book];
+        }
+      }
+    } catch {
+      // ESPN / FPI still cover a missed week
+    }
+  });
+  return lines;
 }
 
 function parseMl(value) {
@@ -188,6 +235,8 @@ async function scrapeOdds() {
     });
   };
 
+  const actionLines = await loadActionLines(weekNums);
+
   const needPred = [];
   for (const ev of events) {
     const payload = oddsById[ev.id] || {};
@@ -200,9 +249,16 @@ async function scrapeOdds() {
       [mlHome, mlAway] = twoSidedMl(payload);
     }
     if (mlHome == null || mlAway == null) {
-      needPred.push(ev.id);
-      mlHome = null;
-      mlAway = null;
+      const homeAbbr = ev.home?.team?.abbreviation;
+      const awayAbbr = ev.away?.team?.abbreviation;
+      const alt = actionLines[`${ev.week}:${homeAbbr}:${awayAbbr}`];
+      if (alt) {
+        [mlHome, mlAway, book] = alt;
+      } else {
+        needPred.push(ev.id);
+        mlHome = null;
+        mlAway = null;
+      }
     }
     sideRow(ev.week, ev.game, ev.date, ev.status, book, ev.home, ev.away, mlHome, "home");
     sideRow(ev.week, ev.game, ev.date, ev.status, book, ev.away, ev.home, mlAway, "away");
@@ -292,7 +348,7 @@ async function scrapeOdds() {
     season: SEASON,
     currentWeek,
     updatedAt: new Date().toISOString(),
-    source: "DraftKings moneylines (de-vig) when posted; ESPN FPI otherwise",
+    source: "DraftKings moneylines (de-vig); ESPN FPI only if no market line",
     weeks,
   };
 }

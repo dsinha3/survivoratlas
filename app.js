@@ -671,7 +671,8 @@ function showUpdated(iso) {
     return;
   }
   const when = new Date(iso);
-  const src = data?.source?.includes("FPI") ? " · FPI for later weeks" : "";
+  const usedFpi = (weekNumbers || []).some((week) => weekSource(week) === "fpi");
+  const src = usedFpi ? " · FPI where books have no line" : "";
   el.textContent = `Lines ${when.toLocaleString()}${src}`;
 }
 

@@ -135,7 +135,7 @@ week,team,team_abbr,opponent,opponent_abbr,home_away,moneyline,win_probability,g
 5,Chicago Bears,CHI,Green Bay Packers,GB,away,-130,54.27,Chicago Bears at Green Bay Packers,2026-10-11T17:00Z,Draft Kings,Scheduled,market
 5,Cincinnati Bengals,CIN,Miami Dolphins,MIA,away,-325,73.35,Cincinnati Bengals at Miami Dolphins,2026-10-11T17:00Z,Draft Kings,Scheduled,market
 5,Cleveland Browns,CLE,New York Jets,NYJ,away,+114,44.86,Cleveland Browns at New York Jets,2026-10-11T17:00Z,Draft Kings,Scheduled,market
-5,Dallas Cowboys,DAL,Tampa Bay Buccaneers,TB,home,-520,80.43,Tampa Bay Buccaneers at Dallas Cowboys,2026-10-09T00:15Z,Draft Kings,Scheduled,market
+5,Dallas Cowboys,DAL,Tampa Bay Buccaneers,TB,home,-500,80.00,Tampa Bay Buccaneers at Dallas Cowboys,2026-10-09T00:15Z,Draft Kings,Scheduled,market
 5,Denver Broncos,DEN,Los Angeles Chargers,LAC,away,-185,62.25,Denver Broncos at Los Angeles Chargers,2026-10-11T20:05Z,Draft Kings,Scheduled,market
 5,Detroit Lions,DET,Arizona Cardinals,ARI,away,-258,69.08,Detroit Lions at Arizona Cardinals,2026-10-11T20:25Z,Draft Kings,Scheduled,market
 5,Green Bay Packers,GB,Chicago Bears,CHI,home,+110,45.73,Chicago Bears at Green Bay Packers,2026-10-11T17:00Z,Draft Kings,Scheduled,market
@@ -156,7 +156,7 @@ week,team,team_abbr,opponent,opponent_abbr,home_away,moneyline,win_probability,g
 5,Pittsburgh Steelers,PIT,Indianapolis Colts,IND,home,-148,57.21,Indianapolis Colts at Pittsburgh Steelers,2026-10-11T17:00Z,Draft Kings,Scheduled,market
 5,San Francisco 49ers,SF,Seattle Seahawks,SEA,away,+136,40.66,San Francisco 49ers at Seattle Seahawks,2026-10-11T20:25Z,Draft Kings,Scheduled,market
 5,Seattle Seahawks,SEA,San Francisco 49ers,SF,home,-162,59.34,San Francisco 49ers at Seattle Seahawks,2026-10-11T20:25Z,Draft Kings,Scheduled,market
-5,Tampa Bay Buccaneers,TB,Dallas Cowboys,DAL,away,+390,19.57,Tampa Bay Buccaneers at Dallas Cowboys,2026-10-09T00:15Z,Draft Kings,Scheduled,market
+5,Tampa Bay Buccaneers,TB,Dallas Cowboys,DAL,away,+380,20.00,Tampa Bay Buccaneers at Dallas Cowboys,2026-10-09T00:15Z,Draft Kings,Scheduled,market
 5,Tennessee Titans,TEN,Houston Texans,HOU,home,+330,22.32,Houston Texans at Tennessee Titans,2026-10-11T17:00Z,Draft Kings,Scheduled,market
 5,Washington Commanders,WSH,New York Giants,NYG,home,-192,63.09,New York Giants at Washington Commanders,2026-10-11T17:00Z,Draft Kings,Scheduled,market
 6,Arizona Cardinals,ARI,Los Angeles Rams,LAR,away,+455,17.29,Arizona Cardinals at Los Angeles Rams,2026-10-18T20:05Z,Draft Kings,Scheduled,market
@@ -191,387 +191,387 @@ week,team,team_abbr,opponent,opponent_abbr,home_away,moneyline,win_probability,g
 6,Tampa Bay Buccaneers,TB,Pittsburgh Steelers,PIT,home,+130,41.70,Pittsburgh Steelers at Tampa Bay Buccaneers,2026-10-18T17:00Z,Draft Kings,Scheduled,market
 6,Tennessee Titans,TEN,Indianapolis Colts,IND,away,+240,28.20,Tennessee Titans at Indianapolis Colts,2026-10-18T17:00Z,Draft Kings,Scheduled,market
 6,Washington Commanders,WSH,San Francisco 49ers,SF,away,+330,22.32,Washington Commanders at San Francisco 49ers,2026-10-20T00:15Z,Draft Kings,Scheduled,market
-7,Arizona Cardinals,ARI,Denver Broncos,DEN,home,,30.40,Denver Broncos at Arizona Cardinals,2026-10-25T20:05Z,ESPN FPI,Scheduled,fpi
-7,Atlanta Falcons,ATL,San Francisco 49ers,SF,home,,25.41,San Francisco 49ers at Atlanta Falcons,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,Baltimore Ravens,BAL,Cincinnati Bengals,CIN,home,,57.46,Cincinnati Bengals at Baltimore Ravens,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
+7,Arizona Cardinals,ARI,Denver Broncos,DEN,home,+295,24.28,Denver Broncos at Arizona Cardinals,2026-10-25T20:05Z,DraftKings,Scheduled,market
+7,Atlanta Falcons,ATL,San Francisco 49ers,SF,home,+190,33.10,San Francisco 49ers at Atlanta Falcons,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,Baltimore Ravens,BAL,Cincinnati Bengals,CIN,home,-185,62.25,Cincinnati Bengals at Baltimore Ravens,2026-10-25T17:00Z,DraftKings,Scheduled,market
 7,Buffalo Bills,BUF,BYE,BYE,,,,,,,Bye,
-7,Carolina Panthers,CAR,Tampa Bay Buccaneers,TB,home,,65.43,Tampa Bay Buccaneers at Carolina Panthers,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,Chicago Bears,CHI,New England Patriots,NE,home,,65.61,New England Patriots at Chicago Bears,2026-10-23T00:15Z,ESPN FPI,Scheduled,fpi
-7,Cincinnati Bengals,CIN,Baltimore Ravens,BAL,away,,42.54,Cincinnati Bengals at Baltimore Ravens,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,Cleveland Browns,CLE,Tennessee Titans,TEN,away,,44.81,Cleveland Browns at Tennessee Titans,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,Dallas Cowboys,DAL,Philadelphia Eagles,PHI,away,,64.35,Dallas Cowboys at Philadelphia Eagles,2026-10-27T00:15Z,ESPN FPI,Scheduled,fpi
-7,Denver Broncos,DEN,Arizona Cardinals,ARI,away,,69.60,Denver Broncos at Arizona Cardinals,2026-10-25T20:05Z,ESPN FPI,Scheduled,fpi
-7,Detroit Lions,DET,Green Bay Packers,GB,home,,65.24,Green Bay Packers at Detroit Lions,2026-10-25T20:25Z,ESPN FPI,Scheduled,fpi
-7,Green Bay Packers,GB,Detroit Lions,DET,away,,34.76,Green Bay Packers at Detroit Lions,2026-10-25T20:25Z,ESPN FPI,Scheduled,fpi
-7,Houston Texans,HOU,New York Giants,NYG,home,,82.66,New York Giants at Houston Texans,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,Indianapolis Colts,IND,Minnesota Vikings,MIN,away,,40.96,Indianapolis Colts at Minnesota Vikings,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
+7,Carolina Panthers,CAR,Tampa Bay Buccaneers,TB,home,+105,46.75,Tampa Bay Buccaneers at Carolina Panthers,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,Chicago Bears,CHI,New England Patriots,NE,home,-122,52.61,New England Patriots at Chicago Bears,2026-10-23T00:15Z,DraftKings,Scheduled,market
+7,Cincinnati Bengals,CIN,Baltimore Ravens,BAL,away,+154,37.75,Cincinnati Bengals at Baltimore Ravens,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,Cleveland Browns,CLE,Tennessee Titans,TEN,away,+114,44.86,Cleveland Browns at Tennessee Titans,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,Dallas Cowboys,DAL,Philadelphia Eagles,PHI,away,+136,40.66,Dallas Cowboys at Philadelphia Eagles,2026-10-27T00:15Z,DraftKings,Scheduled,market
+7,Denver Broncos,DEN,Arizona Cardinals,ARI,away,-375,75.72,Denver Broncos at Arizona Cardinals,2026-10-25T20:05Z,DraftKings,Scheduled,market
+7,Detroit Lions,DET,Green Bay Packers,GB,home,-142,56.35,Green Bay Packers at Detroit Lions,2026-10-25T20:25Z,DraftKings,Scheduled,market
+7,Green Bay Packers,GB,Detroit Lions,DET,away,+120,43.65,Green Bay Packers at Detroit Lions,2026-10-25T20:25Z,DraftKings,Scheduled,market
+7,Houston Texans,HOU,New York Giants,NYG,home,-238,67.50,New York Giants at Houston Texans,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,Indianapolis Colts,IND,Minnesota Vikings,MIN,away,+120,43.65,Indianapolis Colts at Minnesota Vikings,2026-10-25T17:00Z,DraftKings,Scheduled,market
 7,Jacksonville Jaguars,JAX,BYE,BYE,,,,,,,Bye,
-7,Kansas City Chiefs,KC,Seattle Seahawks,SEA,away,,46.17,Kansas City Chiefs at Seattle Seahawks,2026-10-26T00:20Z,ESPN FPI,Scheduled,fpi
-7,Las Vegas Raiders,LV,Los Angeles Rams,LAR,home,,31.53,Los Angeles Rams at Las Vegas Raiders,2026-10-25T20:25Z,ESPN FPI,Scheduled,fpi
+7,Kansas City Chiefs,KC,Seattle Seahawks,SEA,away,+145,39.08,Kansas City Chiefs at Seattle Seahawks,2026-10-26T00:20Z,DraftKings,Scheduled,market
+7,Las Vegas Raiders,LV,Los Angeles Rams,LAR,home,+275,25.59,Los Angeles Rams at Las Vegas Raiders,2026-10-25T20:25Z,DraftKings,Scheduled,market
 7,Los Angeles Chargers,LAC,BYE,BYE,,,,,,,Bye,
-7,Los Angeles Rams,LAR,Las Vegas Raiders,LV,away,,68.47,Los Angeles Rams at Las Vegas Raiders,2026-10-25T20:25Z,ESPN FPI,Scheduled,fpi
-7,Miami Dolphins,MIA,New York Jets,NYJ,away,,33.20,Miami Dolphins at New York Jets,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,Minnesota Vikings,MIN,Indianapolis Colts,IND,home,,59.04,Indianapolis Colts at Minnesota Vikings,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,New England Patriots,NE,Chicago Bears,CHI,away,,34.39,New England Patriots at Chicago Bears,2026-10-23T00:15Z,ESPN FPI,Scheduled,fpi
-7,New Orleans Saints,NO,Pittsburgh Steelers,PIT,home,,48.17,Pittsburgh Steelers at New Orleans Saints,2026-10-25T13:30Z,ESPN FPI,Scheduled,fpi
-7,New York Giants,NYG,Houston Texans,HOU,away,,17.34,New York Giants at Houston Texans,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,New York Jets,NYJ,Miami Dolphins,MIA,home,,66.80,Miami Dolphins at New York Jets,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,Philadelphia Eagles,PHI,Dallas Cowboys,DAL,home,,35.65,Dallas Cowboys at Philadelphia Eagles,2026-10-27T00:15Z,ESPN FPI,Scheduled,fpi
-7,Pittsburgh Steelers,PIT,New Orleans Saints,NO,away,,51.83,Pittsburgh Steelers at New Orleans Saints,2026-10-25T13:30Z,ESPN FPI,Scheduled,fpi
-7,San Francisco 49ers,SF,Atlanta Falcons,ATL,away,,74.59,San Francisco 49ers at Atlanta Falcons,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,Seattle Seahawks,SEA,Kansas City Chiefs,KC,home,,53.83,Kansas City Chiefs at Seattle Seahawks,2026-10-26T00:20Z,ESPN FPI,Scheduled,fpi
-7,Tampa Bay Buccaneers,TB,Carolina Panthers,CAR,away,,34.57,Tampa Bay Buccaneers at Carolina Panthers,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
-7,Tennessee Titans,TEN,Cleveland Browns,CLE,home,,55.19,Cleveland Browns at Tennessee Titans,2026-10-25T17:00Z,ESPN FPI,Scheduled,fpi
+7,Los Angeles Rams,LAR,Las Vegas Raiders,LV,away,-345,74.41,Los Angeles Rams at Las Vegas Raiders,2026-10-25T20:25Z,DraftKings,Scheduled,market
+7,Miami Dolphins,MIA,New York Jets,NYJ,away,+120,43.65,Miami Dolphins at New York Jets,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,Minnesota Vikings,MIN,Indianapolis Colts,IND,home,-142,56.35,Indianapolis Colts at Minnesota Vikings,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,New England Patriots,NE,Chicago Bears,CHI,away,+102,47.39,New England Patriots at Chicago Bears,2026-10-23T00:15Z,DraftKings,Scheduled,market
+7,New Orleans Saints,NO,Pittsburgh Steelers,PIT,home,+120,43.65,Pittsburgh Steelers at New Orleans Saints,2026-10-25T13:30Z,DraftKings,Scheduled,market
+7,New York Giants,NYG,Houston Texans,HOU,away,+195,32.50,New York Giants at Houston Texans,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,New York Jets,NYJ,Miami Dolphins,MIA,home,-142,56.35,Miami Dolphins at New York Jets,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,Philadelphia Eagles,PHI,Dallas Cowboys,DAL,home,-162,59.34,Dallas Cowboys at Philadelphia Eagles,2026-10-27T00:15Z,DraftKings,Scheduled,market
+7,Pittsburgh Steelers,PIT,New Orleans Saints,NO,away,-142,56.35,Pittsburgh Steelers at New Orleans Saints,2026-10-25T13:30Z,DraftKings,Scheduled,market
+7,San Francisco 49ers,SF,Atlanta Falcons,ATL,away,-230,66.90,San Francisco 49ers at Atlanta Falcons,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,Seattle Seahawks,SEA,Kansas City Chiefs,KC,home,-175,60.92,Kansas City Chiefs at Seattle Seahawks,2026-10-26T00:20Z,DraftKings,Scheduled,market
+7,Tampa Bay Buccaneers,TB,Carolina Panthers,CAR,away,-125,53.25,Tampa Bay Buccaneers at Carolina Panthers,2026-10-25T17:00Z,DraftKings,Scheduled,market
+7,Tennessee Titans,TEN,Cleveland Browns,CLE,home,-135,55.14,Cleveland Browns at Tennessee Titans,2026-10-25T17:00Z,DraftKings,Scheduled,market
 7,Washington Commanders,WSH,BYE,BYE,,,,,,,Bye,
-8,Arizona Cardinals,ARI,Dallas Cowboys,DAL,away,,17.43,Arizona Cardinals at Dallas Cowboys,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Atlanta Falcons,ATL,Tampa Bay Buccaneers,TB,away,,53.44,Atlanta Falcons at Tampa Bay Buccaneers,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Baltimore Ravens,BAL,Buffalo Bills,BUF,away,,40.75,Baltimore Ravens at Buffalo Bills,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Buffalo Bills,BUF,Baltimore Ravens,BAL,home,,59.25,Baltimore Ravens at Buffalo Bills,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Carolina Panthers,CAR,Green Bay Packers,GB,away,,46.42,Carolina Panthers at Green Bay Packers,2026-10-30T00:15Z,ESPN FPI,Scheduled,fpi
-8,Chicago Bears,CHI,Seattle Seahawks,SEA,away,,49.78,Chicago Bears at Seattle Seahawks,2026-11-03T01:15Z,ESPN FPI,Scheduled,fpi
-8,Cincinnati Bengals,CIN,Tennessee Titans,TEN,home,,78.42,Tennessee Titans at Cincinnati Bengals,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Cleveland Browns,CLE,Pittsburgh Steelers,PIT,away,,34.10,Cleveland Browns at Pittsburgh Steelers,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Dallas Cowboys,DAL,Arizona Cardinals,ARI,home,,82.57,Arizona Cardinals at Dallas Cowboys,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Denver Broncos,DEN,Kansas City Chiefs,KC,home,,42.78,Kansas City Chiefs at Denver Broncos,2026-11-01T21:25Z,ESPN FPI,Scheduled,fpi
-8,Detroit Lions,DET,Minnesota Vikings,MIN,home,,58.50,Minnesota Vikings at Detroit Lions,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Green Bay Packers,GB,Carolina Panthers,CAR,home,,53.58,Carolina Panthers at Green Bay Packers,2026-10-30T00:15Z,ESPN FPI,Scheduled,fpi
+8,Arizona Cardinals,ARI,Dallas Cowboys,DAL,away,+400,19.18,Arizona Cardinals at Dallas Cowboys,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Atlanta Falcons,ATL,Tampa Bay Buccaneers,TB,away,+180,34.25,Atlanta Falcons at Tampa Bay Buccaneers,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Baltimore Ravens,BAL,Buffalo Bills,BUF,away,+114,44.86,Baltimore Ravens at Buffalo Bills,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Buffalo Bills,BUF,Baltimore Ravens,BAL,home,-135,55.14,Baltimore Ravens at Buffalo Bills,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Carolina Panthers,CAR,Green Bay Packers,GB,away,+270,25.91,Carolina Panthers at Green Bay Packers,2026-10-30T00:15Z,DraftKings,Scheduled,market
+8,Chicago Bears,CHI,Seattle Seahawks,SEA,away,+180,34.25,Chicago Bears at Seattle Seahawks,2026-11-03T01:15Z,DraftKings,Scheduled,market
+8,Cincinnati Bengals,CIN,Tennessee Titans,TEN,home,-290,71.36,Tennessee Titans at Cincinnati Bengals,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Cleveland Browns,CLE,Pittsburgh Steelers,PIT,away,+210,30.92,Cleveland Browns at Pittsburgh Steelers,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Dallas Cowboys,DAL,Arizona Cardinals,ARI,home,-535,80.82,Arizona Cardinals at Dallas Cowboys,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Denver Broncos,DEN,Kansas City Chiefs,KC,home,-125,53.25,Kansas City Chiefs at Denver Broncos,2026-11-01T21:25Z,DraftKings,Scheduled,market
+8,Detroit Lions,DET,Minnesota Vikings,MIN,home,-218,65.75,Minnesota Vikings at Detroit Lions,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Green Bay Packers,GB,Carolina Panthers,CAR,home,-340,74.09,Carolina Panthers at Green Bay Packers,2026-10-30T00:15Z,DraftKings,Scheduled,market
 8,Houston Texans,HOU,BYE,BYE,,,,,,,Bye,
-8,Indianapolis Colts,IND,Jacksonville Jaguars,JAX,away,,25.68,Indianapolis Colts at Jacksonville Jaguars,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Jacksonville Jaguars,JAX,Indianapolis Colts,IND,home,,74.32,Indianapolis Colts at Jacksonville Jaguars,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Kansas City Chiefs,KC,Denver Broncos,DEN,away,,57.22,Kansas City Chiefs at Denver Broncos,2026-11-01T21:25Z,ESPN FPI,Scheduled,fpi
-8,Las Vegas Raiders,LV,New York Jets,NYJ,away,,56.33,Las Vegas Raiders at New York Jets,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Los Angeles Chargers,LAC,Los Angeles Rams,LAR,away,,28.69,Los Angeles Chargers at Los Angeles Rams,2026-11-01T21:05Z,ESPN FPI,Scheduled,fpi
-8,Los Angeles Rams,LAR,Los Angeles Chargers,LAC,home,,71.31,Los Angeles Chargers at Los Angeles Rams,2026-11-01T21:05Z,ESPN FPI,Scheduled,fpi
-8,Miami Dolphins,MIA,New England Patriots,NE,home,,23.78,New England Patriots at Miami Dolphins,2026-11-01T21:25Z,ESPN FPI,Scheduled,fpi
-8,Minnesota Vikings,MIN,Detroit Lions,DET,away,,41.50,Minnesota Vikings at Detroit Lions,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,New England Patriots,NE,Miami Dolphins,MIA,away,,76.22,New England Patriots at Miami Dolphins,2026-11-01T21:25Z,ESPN FPI,Scheduled,fpi
+8,Indianapolis Colts,IND,Jacksonville Jaguars,JAX,away,+180,34.25,Indianapolis Colts at Jacksonville Jaguars,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Jacksonville Jaguars,JAX,Indianapolis Colts,IND,home,-218,65.75,Indianapolis Colts at Jacksonville Jaguars,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Kansas City Chiefs,KC,Denver Broncos,DEN,away,+105,46.75,Kansas City Chiefs at Denver Broncos,2026-11-01T21:25Z,DraftKings,Scheduled,market
+8,Las Vegas Raiders,LV,New York Jets,NYJ,away,+105,46.75,Las Vegas Raiders at New York Jets,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Los Angeles Chargers,LAC,Los Angeles Rams,LAR,away,+164,36.31,Los Angeles Chargers at Los Angeles Rams,2026-11-01T21:05Z,DraftKings,Scheduled,market
+8,Los Angeles Rams,LAR,Los Angeles Chargers,LAC,home,-198,63.69,Los Angeles Chargers at Los Angeles Rams,2026-11-01T21:05Z,DraftKings,Scheduled,market
+8,Miami Dolphins,MIA,New England Patriots,NE,home,+280,25.22,New England Patriots at Miami Dolphins,2026-11-01T21:25Z,DraftKings,Scheduled,market
+8,Minnesota Vikings,MIN,Detroit Lions,DET,away,+180,34.25,Minnesota Vikings at Detroit Lions,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,New England Patriots,NE,Miami Dolphins,MIA,away,-355,74.78,New England Patriots at Miami Dolphins,2026-11-01T21:25Z,DraftKings,Scheduled,market
 8,New Orleans Saints,NO,BYE,BYE,,,,,,,Bye,
 8,New York Giants,NYG,BYE,BYE,,,,,,,Bye,
-8,New York Jets,NYJ,Las Vegas Raiders,LV,home,,43.67,Las Vegas Raiders at New York Jets,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Philadelphia Eagles,PHI,Washington Commanders,WSH,away,,47.09,Philadelphia Eagles at Washington Commanders,2026-11-02T01:20Z,ESPN FPI,Scheduled,fpi
-8,Pittsburgh Steelers,PIT,Cleveland Browns,CLE,home,,65.90,Cleveland Browns at Pittsburgh Steelers,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
+8,New York Jets,NYJ,Las Vegas Raiders,LV,home,-125,53.25,Las Vegas Raiders at New York Jets,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Philadelphia Eagles,PHI,Washington Commanders,WSH,away,-125,53.25,Philadelphia Eagles at Washington Commanders,2026-11-02T01:20Z,DraftKings,Scheduled,market
+8,Pittsburgh Steelers,PIT,Cleveland Browns,CLE,home,-258,69.08,Cleveland Browns at Pittsburgh Steelers,2026-11-01T18:00Z,DraftKings,Scheduled,market
 8,San Francisco 49ers,SF,BYE,BYE,,,,,,,Bye,
-8,Seattle Seahawks,SEA,Chicago Bears,CHI,home,,50.22,Chicago Bears at Seattle Seahawks,2026-11-03T01:15Z,ESPN FPI,Scheduled,fpi
-8,Tampa Bay Buccaneers,TB,Atlanta Falcons,ATL,home,,46.56,Atlanta Falcons at Tampa Bay Buccaneers,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Tennessee Titans,TEN,Cincinnati Bengals,CIN,away,,21.58,Tennessee Titans at Cincinnati Bengals,2026-11-01T18:00Z,ESPN FPI,Scheduled,fpi
-8,Washington Commanders,WSH,Philadelphia Eagles,PHI,home,,52.91,Philadelphia Eagles at Washington Commanders,2026-11-02T01:20Z,ESPN FPI,Scheduled,fpi
-9,Arizona Cardinals,ARI,Seattle Seahawks,SEA,away,,15.90,Arizona Cardinals at Seattle Seahawks,2026-11-08T21:25Z,ESPN FPI,Scheduled,fpi
-9,Atlanta Falcons,ATL,Cincinnati Bengals,CIN,home,,36.30,Cincinnati Bengals at Atlanta Falcons,2026-11-08T14:30Z,ESPN FPI,Scheduled,fpi
-9,Baltimore Ravens,BAL,Jacksonville Jaguars,JAX,home,,49.29,Jacksonville Jaguars at Baltimore Ravens,2026-11-06T01:15Z,ESPN FPI,Scheduled,fpi
-9,Buffalo Bills,BUF,Minnesota Vikings,MIN,away,,58.01,Buffalo Bills at Minnesota Vikings,2026-11-10T01:15Z,ESPN FPI,Scheduled,fpi
-9,Carolina Panthers,CAR,Denver Broncos,DEN,home,,47.79,Denver Broncos at Carolina Panthers,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Chicago Bears,CHI,Tampa Bay Buccaneers,TB,home,,76.31,Tampa Bay Buccaneers at Chicago Bears,2026-11-09T01:20Z,ESPN FPI,Scheduled,fpi
-9,Cincinnati Bengals,CIN,Atlanta Falcons,ATL,away,,63.70,Cincinnati Bengals at Atlanta Falcons,2026-11-08T14:30Z,ESPN FPI,Scheduled,fpi
-9,Cleveland Browns,CLE,New Orleans Saints,NO,away,,35.47,Cleveland Browns at New Orleans Saints,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Dallas Cowboys,DAL,Indianapolis Colts,IND,away,,59.50,Dallas Cowboys at Indianapolis Colts,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Denver Broncos,DEN,Carolina Panthers,CAR,away,,52.21,Denver Broncos at Carolina Panthers,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Detroit Lions,DET,Miami Dolphins,MIA,away,,77.13,Detroit Lions at Miami Dolphins,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Green Bay Packers,GB,New England Patriots,NE,away,,37.97,Green Bay Packers at New England Patriots,2026-11-08T21:25Z,ESPN FPI,Scheduled,fpi
-9,Houston Texans,HOU,Los Angeles Chargers,LAC,away,,50.37,Houston Texans at Los Angeles Chargers,2026-11-08T21:05Z,ESPN FPI,Scheduled,fpi
-9,Indianapolis Colts,IND,Dallas Cowboys,DAL,home,,40.50,Dallas Cowboys at Indianapolis Colts,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Jacksonville Jaguars,JAX,Baltimore Ravens,BAL,away,,50.71,Jacksonville Jaguars at Baltimore Ravens,2026-11-06T01:15Z,ESPN FPI,Scheduled,fpi
-9,Kansas City Chiefs,KC,New York Jets,NYJ,home,,83.37,New York Jets at Kansas City Chiefs,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Las Vegas Raiders,LV,San Francisco 49ers,SF,away,,17.43,Las Vegas Raiders at San Francisco 49ers,2026-11-08T21:05Z,ESPN FPI,Scheduled,fpi
-9,Los Angeles Chargers,LAC,Houston Texans,HOU,home,,49.63,Houston Texans at Los Angeles Chargers,2026-11-08T21:05Z,ESPN FPI,Scheduled,fpi
-9,Los Angeles Rams,LAR,Washington Commanders,WSH,away,,72.46,Los Angeles Rams at Washington Commanders,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Miami Dolphins,MIA,Detroit Lions,DET,home,,22.87,Detroit Lions at Miami Dolphins,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Minnesota Vikings,MIN,Buffalo Bills,BUF,home,,41.99,Buffalo Bills at Minnesota Vikings,2026-11-10T01:15Z,ESPN FPI,Scheduled,fpi
-9,New England Patriots,NE,Green Bay Packers,GB,home,,62.03,Green Bay Packers at New England Patriots,2026-11-08T21:25Z,ESPN FPI,Scheduled,fpi
-9,New Orleans Saints,NO,Cleveland Browns,CLE,home,,64.53,Cleveland Browns at New Orleans Saints,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,New York Giants,NYG,Philadelphia Eagles,PHI,away,,26.61,New York Giants at Philadelphia Eagles,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,New York Jets,NYJ,Kansas City Chiefs,KC,away,,16.63,New York Jets at Kansas City Chiefs,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-9,Philadelphia Eagles,PHI,New York Giants,NYG,home,,73.39,New York Giants at Philadelphia Eagles,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
+8,Seattle Seahawks,SEA,Chicago Bears,CHI,home,-218,65.75,Chicago Bears at Seattle Seahawks,2026-11-03T01:15Z,DraftKings,Scheduled,market
+8,Tampa Bay Buccaneers,TB,Atlanta Falcons,ATL,home,-218,65.75,Atlanta Falcons at Tampa Bay Buccaneers,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Tennessee Titans,TEN,Cincinnati Bengals,CIN,away,+235,28.64,Tennessee Titans at Cincinnati Bengals,2026-11-01T18:00Z,DraftKings,Scheduled,market
+8,Washington Commanders,WSH,Philadelphia Eagles,PHI,home,+105,46.75,Philadelphia Eagles at Washington Commanders,2026-11-02T01:20Z,DraftKings,Scheduled,market
+9,Arizona Cardinals,ARI,Seattle Seahawks,SEA,away,+575,14.21,Arizona Cardinals at Seattle Seahawks,2026-11-08T21:25Z,DraftKings,Scheduled,market
+9,Atlanta Falcons,ATL,Cincinnati Bengals,CIN,home,+190,33.10,Cincinnati Bengals at Atlanta Falcons,2026-11-08T14:30Z,DraftKings,Scheduled,market
+9,Baltimore Ravens,BAL,Jacksonville Jaguars,JAX,home,-205,64.47,Jacksonville Jaguars at Baltimore Ravens,2026-11-06T01:15Z,DraftKings,Scheduled,market
+9,Buffalo Bills,BUF,Minnesota Vikings,MIN,away,-175,60.92,Buffalo Bills at Minnesota Vikings,2026-11-10T01:15Z,DraftKings,Scheduled,market
+9,Carolina Panthers,CAR,Denver Broncos,DEN,home,+136,40.66,Denver Broncos at Carolina Panthers,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Chicago Bears,CHI,Tampa Bay Buccaneers,TB,home,-198,63.69,Tampa Bay Buccaneers at Chicago Bears,2026-11-09T01:20Z,DraftKings,Scheduled,market
+9,Cincinnati Bengals,CIN,Atlanta Falcons,ATL,away,-230,66.90,Cincinnati Bengals at Atlanta Falcons,2026-11-08T14:30Z,DraftKings,Scheduled,market
+9,Cleveland Browns,CLE,New Orleans Saints,NO,away,+160,36.91,Cleveland Browns at New Orleans Saints,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Dallas Cowboys,DAL,Indianapolis Colts,IND,away,-125,53.25,Dallas Cowboys at Indianapolis Colts,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Denver Broncos,DEN,Carolina Panthers,CAR,away,-162,59.34,Denver Broncos at Carolina Panthers,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Detroit Lions,DET,Miami Dolphins,MIA,away,-278,70.50,Detroit Lions at Miami Dolphins,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Green Bay Packers,GB,New England Patriots,NE,away,+105,46.75,Green Bay Packers at New England Patriots,2026-11-08T21:25Z,DraftKings,Scheduled,market
+9,Houston Texans,HOU,Los Angeles Chargers,LAC,away,+114,44.86,Houston Texans at Los Angeles Chargers,2026-11-08T21:05Z,DraftKings,Scheduled,market
+9,Indianapolis Colts,IND,Dallas Cowboys,DAL,home,+105,46.75,Dallas Cowboys at Indianapolis Colts,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Jacksonville Jaguars,JAX,Baltimore Ravens,BAL,away,+170,35.53,Jacksonville Jaguars at Baltimore Ravens,2026-11-06T01:15Z,DraftKings,Scheduled,market
+9,Kansas City Chiefs,KC,New York Jets,NYJ,home,-395,76.59,New York Jets at Kansas City Chiefs,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Las Vegas Raiders,LV,San Francisco 49ers,SF,away,+330,22.32,Las Vegas Raiders at San Francisco 49ers,2026-11-08T21:05Z,DraftKings,Scheduled,market
+9,Los Angeles Chargers,LAC,Houston Texans,HOU,home,-135,55.14,Houston Texans at Los Angeles Chargers,2026-11-08T21:05Z,DraftKings,Scheduled,market
+9,Los Angeles Rams,LAR,Washington Commanders,WSH,away,-225,66.36,Los Angeles Rams at Washington Commanders,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Miami Dolphins,MIA,Detroit Lions,DET,home,+225,29.50,Detroit Lions at Miami Dolphins,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Minnesota Vikings,MIN,Buffalo Bills,BUF,home,+145,39.08,Buffalo Bills at Minnesota Vikings,2026-11-10T01:15Z,DraftKings,Scheduled,market
+9,New England Patriots,NE,Green Bay Packers,GB,home,-125,53.25,Green Bay Packers at New England Patriots,2026-11-08T21:25Z,DraftKings,Scheduled,market
+9,New Orleans Saints,NO,Cleveland Browns,CLE,home,-192,63.09,Cleveland Browns at New Orleans Saints,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,New York Giants,NYG,Philadelphia Eagles,PHI,away,+195,32.50,New York Giants at Philadelphia Eagles,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,New York Jets,NYJ,Kansas City Chiefs,KC,away,+310,23.41,New York Jets at Kansas City Chiefs,2026-11-08T18:00Z,DraftKings,Scheduled,market
+9,Philadelphia Eagles,PHI,New York Giants,NYG,home,-238,67.50,New York Giants at Philadelphia Eagles,2026-11-08T18:00Z,DraftKings,Scheduled,market
 9,Pittsburgh Steelers,PIT,BYE,BYE,,,,,,,Bye,
-9,San Francisco 49ers,SF,Las Vegas Raiders,LV,home,,82.57,Las Vegas Raiders at San Francisco 49ers,2026-11-08T21:05Z,ESPN FPI,Scheduled,fpi
-9,Seattle Seahawks,SEA,Arizona Cardinals,ARI,home,,84.10,Arizona Cardinals at Seattle Seahawks,2026-11-08T21:25Z,ESPN FPI,Scheduled,fpi
-9,Tampa Bay Buccaneers,TB,Chicago Bears,CHI,away,,23.69,Tampa Bay Buccaneers at Chicago Bears,2026-11-09T01:20Z,ESPN FPI,Scheduled,fpi
+9,San Francisco 49ers,SF,Las Vegas Raiders,LV,home,-425,77.68,Las Vegas Raiders at San Francisco 49ers,2026-11-08T21:05Z,DraftKings,Scheduled,market
+9,Seattle Seahawks,SEA,Arizona Cardinals,ARI,home,-850,85.79,Arizona Cardinals at Seattle Seahawks,2026-11-08T21:25Z,DraftKings,Scheduled,market
+9,Tampa Bay Buccaneers,TB,Chicago Bears,CHI,away,+164,36.31,Tampa Bay Buccaneers at Chicago Bears,2026-11-09T01:20Z,DraftKings,Scheduled,market
 9,Tennessee Titans,TEN,BYE,BYE,,,,,,,Bye,
-9,Washington Commanders,WSH,Los Angeles Rams,LAR,home,,27.54,Los Angeles Rams at Washington Commanders,2026-11-08T18:00Z,ESPN FPI,Scheduled,fpi
-10,Arizona Cardinals,ARI,Los Angeles Rams,LAR,home,,20.36,Los Angeles Rams at Arizona Cardinals,2026-11-15T21:05Z,ESPN FPI,Scheduled,fpi
-10,Atlanta Falcons,ATL,Kansas City Chiefs,KC,home,,33.90,Kansas City Chiefs at Atlanta Falcons,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Baltimore Ravens,BAL,Los Angeles Chargers,LAC,home,,67.15,Los Angeles Chargers at Baltimore Ravens,2026-11-17T01:15Z,ESPN FPI,Scheduled,fpi
-10,Buffalo Bills,BUF,New York Jets,NYJ,away,,74.58,Buffalo Bills at New York Jets,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Carolina Panthers,CAR,New Orleans Saints,NO,away,,51.06,Carolina Panthers at New Orleans Saints,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
+9,Washington Commanders,WSH,Los Angeles Rams,LAR,home,+185,33.64,Los Angeles Rams at Washington Commanders,2026-11-08T18:00Z,DraftKings,Scheduled,market
+10,Arizona Cardinals,ARI,Los Angeles Rams,LAR,home,+360,20.86,Los Angeles Rams at Arizona Cardinals,2026-11-15T21:05Z,DraftKings,Scheduled,market
+10,Atlanta Falcons,ATL,Kansas City Chiefs,KC,home,+170,35.53,Kansas City Chiefs at Atlanta Falcons,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Baltimore Ravens,BAL,Los Angeles Chargers,LAC,home,-180,61.64,Los Angeles Chargers at Baltimore Ravens,2026-11-17T01:15Z,DraftKings,Scheduled,market
+10,Buffalo Bills,BUF,New York Jets,NYJ,away,-340,74.09,Buffalo Bills at New York Jets,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Carolina Panthers,CAR,New Orleans Saints,NO,away,+100,47.83,Carolina Panthers at New Orleans Saints,2026-11-15T18:00Z,DraftKings,Scheduled,market
 10,Chicago Bears,CHI,BYE,BYE,,,,,,,Bye,
-10,Cincinnati Bengals,CIN,Pittsburgh Steelers,PIT,home,,68.82,Pittsburgh Steelers at Cincinnati Bengals,2026-11-16T01:20Z,ESPN FPI,Scheduled,fpi
-10,Cleveland Browns,CLE,Houston Texans,HOU,home,,33.76,Houston Texans at Cleveland Browns,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Dallas Cowboys,DAL,San Francisco 49ers,SF,home,,42.08,San Francisco 49ers at Dallas Cowboys,2026-11-15T21:25Z,ESPN FPI,Scheduled,fpi
+10,Cincinnati Bengals,CIN,Pittsburgh Steelers,PIT,home,-198,63.69,Pittsburgh Steelers at Cincinnati Bengals,2026-11-16T01:20Z,DraftKings,Scheduled,market
+10,Cleveland Browns,CLE,Houston Texans,HOU,home,+170,35.53,Houston Texans at Cleveland Browns,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Dallas Cowboys,DAL,San Francisco 49ers,SF,home,-120,52.17,San Francisco 49ers at Dallas Cowboys,2026-11-15T21:25Z,DraftKings,Scheduled,market
 10,Denver Broncos,DEN,BYE,BYE,,,,,,,Bye,
-10,Detroit Lions,DET,New England Patriots,NE,home,,51.56,New England Patriots at Detroit Lions,2026-11-15T14:30Z,ESPN FPI,Scheduled,fpi
-10,Green Bay Packers,GB,Minnesota Vikings,MIN,home,,48.96,Minnesota Vikings at Green Bay Packers,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Houston Texans,HOU,Cleveland Browns,CLE,away,,66.24,Houston Texans at Cleveland Browns,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Indianapolis Colts,IND,Miami Dolphins,MIA,home,,79.94,Miami Dolphins at Indianapolis Colts,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Jacksonville Jaguars,JAX,Tennessee Titans,TEN,away,,76.24,Jacksonville Jaguars at Tennessee Titans,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Kansas City Chiefs,KC,Atlanta Falcons,ATL,away,,66.10,Kansas City Chiefs at Atlanta Falcons,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Las Vegas Raiders,LV,Seattle Seahawks,SEA,home,,35.55,Seattle Seahawks at Las Vegas Raiders,2026-11-15T21:05Z,ESPN FPI,Scheduled,fpi
-10,Los Angeles Chargers,LAC,Baltimore Ravens,BAL,away,,32.85,Los Angeles Chargers at Baltimore Ravens,2026-11-17T01:15Z,ESPN FPI,Scheduled,fpi
-10,Los Angeles Rams,LAR,Arizona Cardinals,ARI,away,,79.64,Los Angeles Rams at Arizona Cardinals,2026-11-15T21:05Z,ESPN FPI,Scheduled,fpi
-10,Miami Dolphins,MIA,Indianapolis Colts,IND,away,,20.06,Miami Dolphins at Indianapolis Colts,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Minnesota Vikings,MIN,Green Bay Packers,GB,away,,51.04,Minnesota Vikings at Green Bay Packers,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,New England Patriots,NE,Detroit Lions,DET,away,,48.44,New England Patriots at Detroit Lions,2026-11-15T14:30Z,ESPN FPI,Scheduled,fpi
-10,New Orleans Saints,NO,Carolina Panthers,CAR,home,,48.94,Carolina Panthers at New Orleans Saints,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,New York Giants,NYG,Washington Commanders,WSH,home,,37.56,Washington Commanders at New York Giants,2026-11-13T01:15Z,ESPN FPI,Scheduled,fpi
-10,New York Jets,NYJ,Buffalo Bills,BUF,home,,25.42,Buffalo Bills at New York Jets,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
+10,Detroit Lions,DET,New England Patriots,NE,home,-125,53.25,New England Patriots at Detroit Lions,2026-11-15T14:30Z,DraftKings,Scheduled,market
+10,Green Bay Packers,GB,Minnesota Vikings,MIN,home,-245,68.06,Minnesota Vikings at Green Bay Packers,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Houston Texans,HOU,Cleveland Browns,CLE,away,-205,64.47,Houston Texans at Cleveland Browns,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Indianapolis Colts,IND,Miami Dolphins,MIA,home,-305,72.21,Miami Dolphins at Indianapolis Colts,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Jacksonville Jaguars,JAX,Tennessee Titans,TEN,away,-135,55.14,Jacksonville Jaguars at Tennessee Titans,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Kansas City Chiefs,KC,Atlanta Falcons,ATL,away,-205,64.47,Kansas City Chiefs at Atlanta Falcons,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Las Vegas Raiders,LV,Seattle Seahawks,SEA,home,+250,27.42,Seattle Seahawks at Las Vegas Raiders,2026-11-15T21:05Z,DraftKings,Scheduled,market
+10,Los Angeles Chargers,LAC,Baltimore Ravens,BAL,away,+150,38.36,Los Angeles Chargers at Baltimore Ravens,2026-11-17T01:15Z,DraftKings,Scheduled,market
+10,Los Angeles Rams,LAR,Arizona Cardinals,ARI,away,-470,79.14,Los Angeles Rams at Arizona Cardinals,2026-11-15T21:05Z,DraftKings,Scheduled,market
+10,Miami Dolphins,MIA,Indianapolis Colts,IND,away,+245,27.79,Miami Dolphins at Indianapolis Colts,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Minnesota Vikings,MIN,Green Bay Packers,GB,away,+200,31.94,Minnesota Vikings at Green Bay Packers,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,New England Patriots,NE,Detroit Lions,DET,away,+105,46.75,New England Patriots at Detroit Lions,2026-11-15T14:30Z,DraftKings,Scheduled,market
+10,New Orleans Saints,NO,Carolina Panthers,CAR,home,-120,52.17,Carolina Panthers at New Orleans Saints,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,New York Giants,NYG,Washington Commanders,WSH,home,-122,52.61,Washington Commanders at New York Giants,2026-11-13T01:15Z,DraftKings,Scheduled,market
+10,New York Jets,NYJ,Buffalo Bills,BUF,home,+270,25.91,Buffalo Bills at New York Jets,2026-11-15T18:00Z,DraftKings,Scheduled,market
 10,Philadelphia Eagles,PHI,BYE,BYE,,,,,,,Bye,
-10,Pittsburgh Steelers,PIT,Cincinnati Bengals,CIN,away,,31.18,Pittsburgh Steelers at Cincinnati Bengals,2026-11-16T01:20Z,ESPN FPI,Scheduled,fpi
-10,San Francisco 49ers,SF,Dallas Cowboys,DAL,away,,57.92,San Francisco 49ers at Dallas Cowboys,2026-11-15T21:25Z,ESPN FPI,Scheduled,fpi
-10,Seattle Seahawks,SEA,Las Vegas Raiders,LV,away,,64.45,Seattle Seahawks at Las Vegas Raiders,2026-11-15T21:05Z,ESPN FPI,Scheduled,fpi
+10,Pittsburgh Steelers,PIT,Cincinnati Bengals,CIN,away,+164,36.31,Pittsburgh Steelers at Cincinnati Bengals,2026-11-16T01:20Z,DraftKings,Scheduled,market
+10,San Francisco 49ers,SF,Dallas Cowboys,DAL,away,+100,47.83,San Francisco 49ers at Dallas Cowboys,2026-11-15T21:25Z,DraftKings,Scheduled,market
+10,Seattle Seahawks,SEA,Las Vegas Raiders,LV,away,-310,72.58,Seattle Seahawks at Las Vegas Raiders,2026-11-15T21:05Z,DraftKings,Scheduled,market
 10,Tampa Bay Buccaneers,TB,BYE,BYE,,,,,,,Bye,
-10,Tennessee Titans,TEN,Jacksonville Jaguars,JAX,home,,23.76,Jacksonville Jaguars at Tennessee Titans,2026-11-15T18:00Z,ESPN FPI,Scheduled,fpi
-10,Washington Commanders,WSH,New York Giants,NYG,away,,62.44,Washington Commanders at New York Giants,2026-11-13T01:15Z,ESPN FPI,Scheduled,fpi
-11,Arizona Cardinals,ARI,Kansas City Chiefs,KC,away,,15.52,Arizona Cardinals at Kansas City Chiefs,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
+10,Tennessee Titans,TEN,Jacksonville Jaguars,JAX,home,+114,44.86,Jacksonville Jaguars at Tennessee Titans,2026-11-15T18:00Z,DraftKings,Scheduled,market
+10,Washington Commanders,WSH,New York Giants,NYG,away,+102,47.39,Washington Commanders at New York Giants,2026-11-13T01:15Z,DraftKings,Scheduled,market
+11,Arizona Cardinals,ARI,Kansas City Chiefs,KC,away,+440,17.77,Arizona Cardinals at Kansas City Chiefs,2026-11-22T18:00Z,DraftKings,Scheduled,market
 11,Atlanta Falcons,ATL,BYE,BYE,,,,,,,Bye,
-11,Baltimore Ravens,BAL,Carolina Panthers,CAR,away,,59.74,Baltimore Ravens at Carolina Panthers,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Buffalo Bills,BUF,Miami Dolphins,MIA,home,,88.93,Miami Dolphins at Buffalo Bills,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Carolina Panthers,CAR,Baltimore Ravens,BAL,home,,40.26,Baltimore Ravens at Carolina Panthers,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Chicago Bears,CHI,New Orleans Saints,NO,home,,80.18,New Orleans Saints at Chicago Bears,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Cincinnati Bengals,CIN,Washington Commanders,WSH,away,,63.49,Cincinnati Bengals at Washington Commanders,2026-11-24T01:15Z,ESPN FPI,Scheduled,fpi
+11,Baltimore Ravens,BAL,Carolina Panthers,CAR,away,-218,65.75,Baltimore Ravens at Carolina Panthers,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Buffalo Bills,BUF,Miami Dolphins,MIA,home,-625,82.71,Miami Dolphins at Buffalo Bills,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Carolina Panthers,CAR,Baltimore Ravens,BAL,home,+180,34.25,Baltimore Ravens at Carolina Panthers,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Chicago Bears,CHI,New Orleans Saints,NO,home,-285,70.95,New Orleans Saints at Chicago Bears,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Cincinnati Bengals,CIN,Washington Commanders,WSH,away,-125,53.25,Cincinnati Bengals at Washington Commanders,2026-11-24T01:15Z,DraftKings,Scheduled,market
 11,Cleveland Browns,CLE,BYE,BYE,,,,,,,Bye,
-11,Dallas Cowboys,DAL,Tennessee Titans,TEN,home,,80.39,Tennessee Titans at Dallas Cowboys,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Denver Broncos,DEN,Las Vegas Raiders,LV,home,,65.75,Las Vegas Raiders at Denver Broncos,2026-11-22T21:25Z,ESPN FPI,Scheduled,fpi
-11,Detroit Lions,DET,Tampa Bay Buccaneers,TB,home,,62.36,Tampa Bay Buccaneers at Detroit Lions,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
+11,Dallas Cowboys,DAL,Tennessee Titans,TEN,home,-290,71.36,Tennessee Titans at Dallas Cowboys,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Denver Broncos,DEN,Las Vegas Raiders,LV,home,-340,74.09,Las Vegas Raiders at Denver Broncos,2026-11-22T21:25Z,DraftKings,Scheduled,market
+11,Detroit Lions,DET,Tampa Bay Buccaneers,TB,home,-225,66.36,Tampa Bay Buccaneers at Detroit Lions,2026-11-22T18:00Z,DraftKings,Scheduled,market
 11,Green Bay Packers,GB,BYE,BYE,,,,,,,Bye,
-11,Houston Texans,HOU,Indianapolis Colts,IND,home,,60.99,Indianapolis Colts at Houston Texans,2026-11-20T01:15Z,ESPN FPI,Scheduled,fpi
-11,Indianapolis Colts,IND,Houston Texans,HOU,away,,39.01,Indianapolis Colts at Houston Texans,2026-11-20T01:15Z,ESPN FPI,Scheduled,fpi
-11,Jacksonville Jaguars,JAX,New York Giants,NYG,away,,84.07,Jacksonville Jaguars at New York Giants,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Kansas City Chiefs,KC,Arizona Cardinals,ARI,home,,84.48,Arizona Cardinals at Kansas City Chiefs,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Las Vegas Raiders,LV,Denver Broncos,DEN,away,,34.25,Las Vegas Raiders at Denver Broncos,2026-11-22T21:25Z,ESPN FPI,Scheduled,fpi
-11,Los Angeles Chargers,LAC,New York Jets,NYJ,home,,70.94,New York Jets at Los Angeles Chargers,2026-11-22T21:05Z,ESPN FPI,Scheduled,fpi
+11,Houston Texans,HOU,Indianapolis Colts,IND,home,-238,67.50,Indianapolis Colts at Houston Texans,2026-11-20T01:15Z,DraftKings,Scheduled,market
+11,Indianapolis Colts,IND,Houston Texans,HOU,away,+195,32.50,Indianapolis Colts at Houston Texans,2026-11-20T01:15Z,DraftKings,Scheduled,market
+11,Jacksonville Jaguars,JAX,New York Giants,NYG,away,-125,53.25,Jacksonville Jaguars at New York Giants,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Kansas City Chiefs,KC,Arizona Cardinals,ARI,home,-600,82.23,Arizona Cardinals at Kansas City Chiefs,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Las Vegas Raiders,LV,Denver Broncos,DEN,away,+270,25.91,Las Vegas Raiders at Denver Broncos,2026-11-22T21:25Z,DraftKings,Scheduled,market
+11,Los Angeles Chargers,LAC,New York Jets,NYJ,home,-425,77.68,New York Jets at Los Angeles Chargers,2026-11-22T21:05Z,DraftKings,Scheduled,market
 11,Los Angeles Rams,LAR,BYE,BYE,,,,,,,Bye,
-11,Miami Dolphins,MIA,Buffalo Bills,BUF,away,,11.07,Miami Dolphins at Buffalo Bills,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Minnesota Vikings,MIN,San Francisco 49ers,SF,away,,26.97,Minnesota Vikings at San Francisco 49ers,2026-11-23T01:20Z,ESPN FPI,Scheduled,fpi
+11,Miami Dolphins,MIA,Buffalo Bills,BUF,away,+455,17.29,Miami Dolphins at Buffalo Bills,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Minnesota Vikings,MIN,San Francisco 49ers,SF,away,+160,36.91,Minnesota Vikings at San Francisco 49ers,2026-11-23T01:20Z,DraftKings,Scheduled,market
 11,New England Patriots,NE,BYE,BYE,,,,,,,Bye,
-11,New Orleans Saints,NO,Chicago Bears,CHI,away,,19.82,New Orleans Saints at Chicago Bears,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,New York Giants,NYG,Jacksonville Jaguars,JAX,home,,15.93,Jacksonville Jaguars at New York Giants,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,New York Jets,NYJ,Los Angeles Chargers,LAC,away,,29.06,New York Jets at Los Angeles Chargers,2026-11-22T21:05Z,ESPN FPI,Scheduled,fpi
-11,Philadelphia Eagles,PHI,Pittsburgh Steelers,PIT,home,,55.66,Pittsburgh Steelers at Philadelphia Eagles,2026-11-22T21:25Z,ESPN FPI,Scheduled,fpi
-11,Pittsburgh Steelers,PIT,Philadelphia Eagles,PHI,away,,44.34,Pittsburgh Steelers at Philadelphia Eagles,2026-11-22T21:25Z,ESPN FPI,Scheduled,fpi
-11,San Francisco 49ers,SF,Minnesota Vikings,MIN,home,,73.03,Minnesota Vikings at San Francisco 49ers,2026-11-23T01:20Z,ESPN FPI,Scheduled,fpi
+11,New Orleans Saints,NO,Chicago Bears,CHI,away,+230,29.05,New Orleans Saints at Chicago Bears,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,New York Giants,NYG,Jacksonville Jaguars,JAX,home,+105,46.75,Jacksonville Jaguars at New York Giants,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,New York Jets,NYJ,Los Angeles Chargers,LAC,away,+330,22.32,New York Jets at Los Angeles Chargers,2026-11-22T21:05Z,DraftKings,Scheduled,market
+11,Philadelphia Eagles,PHI,Pittsburgh Steelers,PIT,home,-238,67.50,Pittsburgh Steelers at Philadelphia Eagles,2026-11-22T21:25Z,DraftKings,Scheduled,market
+11,Pittsburgh Steelers,PIT,Philadelphia Eagles,PHI,away,+195,32.50,Pittsburgh Steelers at Philadelphia Eagles,2026-11-22T21:25Z,DraftKings,Scheduled,market
+11,San Francisco 49ers,SF,Minnesota Vikings,MIN,home,-192,63.09,Minnesota Vikings at San Francisco 49ers,2026-11-23T01:20Z,DraftKings,Scheduled,market
 11,Seattle Seahawks,SEA,BYE,BYE,,,,,,,Bye,
-11,Tampa Bay Buccaneers,TB,Detroit Lions,DET,away,,37.64,Tampa Bay Buccaneers at Detroit Lions,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Tennessee Titans,TEN,Dallas Cowboys,DAL,away,,19.61,Tennessee Titans at Dallas Cowboys,2026-11-22T18:00Z,ESPN FPI,Scheduled,fpi
-11,Washington Commanders,WSH,Cincinnati Bengals,CIN,home,,36.51,Cincinnati Bengals at Washington Commanders,2026-11-24T01:15Z,ESPN FPI,Scheduled,fpi
-12,Arizona Cardinals,ARI,Washington Commanders,WSH,home,,45.96,Washington Commanders at Arizona Cardinals,2026-11-29T21:25Z,ESPN FPI,Scheduled,fpi
-12,Atlanta Falcons,ATL,Minnesota Vikings,MIN,away,,39.48,Atlanta Falcons at Minnesota Vikings,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,Baltimore Ravens,BAL,Houston Texans,HOU,away,,51.99,Baltimore Ravens at Houston Texans,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,Buffalo Bills,BUF,Kansas City Chiefs,KC,home,,53.34,Kansas City Chiefs at Buffalo Bills,2026-11-27T01:20Z,ESPN FPI,Scheduled,fpi
-12,Carolina Panthers,CAR,Tampa Bay Buccaneers,TB,away,,46.43,Carolina Panthers at Tampa Bay Buccaneers,2026-12-01T01:15Z,ESPN FPI,Scheduled,fpi
-12,Chicago Bears,CHI,Detroit Lions,DET,away,,60.42,Chicago Bears at Detroit Lions,2026-11-26T18:00Z,ESPN FPI,Scheduled,fpi
-12,Cincinnati Bengals,CIN,New Orleans Saints,NO,home,,71.27,New Orleans Saints at Cincinnati Bengals,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,Cleveland Browns,CLE,Las Vegas Raiders,LV,home,,44.15,Las Vegas Raiders at Cleveland Browns,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,Dallas Cowboys,DAL,Philadelphia Eagles,PHI,home,,72.70,Philadelphia Eagles at Dallas Cowboys,2026-11-26T21:30Z,ESPN FPI,Scheduled,fpi
-12,Denver Broncos,DEN,Pittsburgh Steelers,PIT,away,,55.89,Denver Broncos at Pittsburgh Steelers,2026-11-27T20:00Z,ESPN FPI,Scheduled,fpi
-12,Detroit Lions,DET,Chicago Bears,CHI,home,,39.58,Chicago Bears at Detroit Lions,2026-11-26T18:00Z,ESPN FPI,Scheduled,fpi
-12,Green Bay Packers,GB,Los Angeles Rams,LAR,away,,24.21,Green Bay Packers at Los Angeles Rams,2026-11-26T01:00Z,ESPN FPI,Scheduled,fpi
-12,Houston Texans,HOU,Baltimore Ravens,BAL,home,,48.01,Baltimore Ravens at Houston Texans,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,Indianapolis Colts,IND,New York Giants,NYG,home,,78.24,New York Giants at Indianapolis Colts,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,Jacksonville Jaguars,JAX,Tennessee Titans,TEN,home,,83.26,Tennessee Titans at Jacksonville Jaguars,2026-11-29T21:05Z,ESPN FPI,Scheduled,fpi
-12,Kansas City Chiefs,KC,Buffalo Bills,BUF,away,,46.66,Kansas City Chiefs at Buffalo Bills,2026-11-27T01:20Z,ESPN FPI,Scheduled,fpi
-12,Las Vegas Raiders,LV,Cleveland Browns,CLE,away,,55.85,Las Vegas Raiders at Cleveland Browns,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,Los Angeles Chargers,LAC,New England Patriots,NE,home,,50.69,New England Patriots at Los Angeles Chargers,2026-11-30T01:20Z,ESPN FPI,Scheduled,fpi
-12,Los Angeles Rams,LAR,Green Bay Packers,GB,home,,75.79,Green Bay Packers at Los Angeles Rams,2026-11-26T01:00Z,ESPN FPI,Scheduled,fpi
-12,Miami Dolphins,MIA,New York Jets,NYJ,home,,41.96,New York Jets at Miami Dolphins,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,Minnesota Vikings,MIN,Atlanta Falcons,ATL,home,,60.52,Atlanta Falcons at Minnesota Vikings,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,New England Patriots,NE,Los Angeles Chargers,LAC,away,,49.31,New England Patriots at Los Angeles Chargers,2026-11-30T01:20Z,ESPN FPI,Scheduled,fpi
-12,New Orleans Saints,NO,Cincinnati Bengals,CIN,away,,28.73,New Orleans Saints at Cincinnati Bengals,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,New York Giants,NYG,Indianapolis Colts,IND,away,,21.76,New York Giants at Indianapolis Colts,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,New York Jets,NYJ,Miami Dolphins,MIA,away,,58.04,New York Jets at Miami Dolphins,2026-11-29T18:00Z,ESPN FPI,Scheduled,fpi
-12,Philadelphia Eagles,PHI,Dallas Cowboys,DAL,away,,27.30,Philadelphia Eagles at Dallas Cowboys,2026-11-26T21:30Z,ESPN FPI,Scheduled,fpi
-12,Pittsburgh Steelers,PIT,Denver Broncos,DEN,home,,44.11,Denver Broncos at Pittsburgh Steelers,2026-11-27T20:00Z,ESPN FPI,Scheduled,fpi
-12,San Francisco 49ers,SF,Seattle Seahawks,SEA,home,,64.27,Seattle Seahawks at San Francisco 49ers,2026-11-29T21:25Z,ESPN FPI,Scheduled,fpi
-12,Seattle Seahawks,SEA,San Francisco 49ers,SF,away,,35.73,Seattle Seahawks at San Francisco 49ers,2026-11-29T21:25Z,ESPN FPI,Scheduled,fpi
-12,Tampa Bay Buccaneers,TB,Carolina Panthers,CAR,home,,53.57,Carolina Panthers at Tampa Bay Buccaneers,2026-12-01T01:15Z,ESPN FPI,Scheduled,fpi
-12,Tennessee Titans,TEN,Jacksonville Jaguars,JAX,away,,16.74,Tennessee Titans at Jacksonville Jaguars,2026-11-29T21:05Z,ESPN FPI,Scheduled,fpi
-12,Washington Commanders,WSH,Arizona Cardinals,ARI,away,,54.04,Washington Commanders at Arizona Cardinals,2026-11-29T21:25Z,ESPN FPI,Scheduled,fpi
-13,Arizona Cardinals,ARI,Philadelphia Eagles,PHI,home,,41.83,Philadelphia Eagles at Arizona Cardinals,2026-12-06T21:05Z,ESPN FPI,Scheduled,fpi
-13,Atlanta Falcons,ATL,Detroit Lions,DET,home,,45.49,Detroit Lions at Atlanta Falcons,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
+11,Tampa Bay Buccaneers,TB,Detroit Lions,DET,away,+185,33.64,Tampa Bay Buccaneers at Detroit Lions,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Tennessee Titans,TEN,Dallas Cowboys,DAL,away,+235,28.64,Tennessee Titans at Dallas Cowboys,2026-11-22T18:00Z,DraftKings,Scheduled,market
+11,Washington Commanders,WSH,Cincinnati Bengals,CIN,home,+105,46.75,Cincinnati Bengals at Washington Commanders,2026-11-24T01:15Z,DraftKings,Scheduled,market
+12,Arizona Cardinals,ARI,Washington Commanders,WSH,home,+180,34.25,Washington Commanders at Arizona Cardinals,2026-11-29T21:25Z,DraftKings,Scheduled,market
+12,Atlanta Falcons,ATL,Minnesota Vikings,MIN,away,+180,34.25,Atlanta Falcons at Minnesota Vikings,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,Baltimore Ravens,BAL,Houston Texans,HOU,away,+102,47.39,Baltimore Ravens at Houston Texans,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,Buffalo Bills,BUF,Kansas City Chiefs,KC,home,-148,57.21,Kansas City Chiefs at Buffalo Bills,2026-11-27T01:20Z,DraftKings,Scheduled,market
+12,Carolina Panthers,CAR,Tampa Bay Buccaneers,TB,away,+164,36.31,Carolina Panthers at Tampa Bay Buccaneers,2026-12-01T01:15Z,DraftKings,Scheduled,market
+12,Chicago Bears,CHI,Detroit Lions,DET,away,+120,43.65,Chicago Bears at Detroit Lions,2026-11-26T18:00Z,DraftKings,Scheduled,market
+12,Cincinnati Bengals,CIN,New Orleans Saints,NO,home,-285,70.95,New Orleans Saints at Cincinnati Bengals,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,Cleveland Browns,CLE,Las Vegas Raiders,LV,home,-122,52.61,Las Vegas Raiders at Cleveland Browns,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,Dallas Cowboys,DAL,Philadelphia Eagles,PHI,home,-125,53.25,Philadelphia Eagles at Dallas Cowboys,2026-11-26T21:30Z,DraftKings,Scheduled,market
+12,Denver Broncos,DEN,Pittsburgh Steelers,PIT,away,-122,52.61,Denver Broncos at Pittsburgh Steelers,2026-11-27T20:00Z,DraftKings,Scheduled,market
+12,Detroit Lions,DET,Chicago Bears,CHI,home,-142,56.35,Chicago Bears at Detroit Lions,2026-11-26T18:00Z,DraftKings,Scheduled,market
+12,Green Bay Packers,GB,Los Angeles Rams,LAR,away,+185,33.64,Green Bay Packers at Los Angeles Rams,2026-11-26T01:00Z,DraftKings,Scheduled,market
+12,Houston Texans,HOU,Baltimore Ravens,BAL,home,-122,52.61,Baltimore Ravens at Houston Texans,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,Indianapolis Colts,IND,New York Giants,NYG,home,-135,55.14,New York Giants at Indianapolis Colts,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,Jacksonville Jaguars,JAX,Tennessee Titans,TEN,home,-238,67.50,Tennessee Titans at Jacksonville Jaguars,2026-11-29T21:05Z,DraftKings,Scheduled,market
+12,Kansas City Chiefs,KC,Buffalo Bills,BUF,away,+124,42.79,Kansas City Chiefs at Buffalo Bills,2026-11-27T01:20Z,DraftKings,Scheduled,market
+12,Las Vegas Raiders,LV,Cleveland Browns,CLE,away,+102,47.39,Las Vegas Raiders at Cleveland Browns,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,Los Angeles Chargers,LAC,New England Patriots,NE,home,-125,53.25,New England Patriots at Los Angeles Chargers,2026-11-30T01:20Z,DraftKings,Scheduled,market
+12,Los Angeles Rams,LAR,Green Bay Packers,GB,home,-225,66.36,Green Bay Packers at Los Angeles Rams,2026-11-26T01:00Z,DraftKings,Scheduled,market
+12,Miami Dolphins,MIA,New York Jets,NYJ,home,-125,53.25,New York Jets at Miami Dolphins,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,Minnesota Vikings,MIN,Atlanta Falcons,ATL,home,-218,65.75,Atlanta Falcons at Minnesota Vikings,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,New England Patriots,NE,Los Angeles Chargers,LAC,away,+105,46.75,New England Patriots at Los Angeles Chargers,2026-11-30T01:20Z,DraftKings,Scheduled,market
+12,New Orleans Saints,NO,Cincinnati Bengals,CIN,away,+230,29.05,New Orleans Saints at Cincinnati Bengals,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,New York Giants,NYG,Indianapolis Colts,IND,away,+114,44.86,New York Giants at Indianapolis Colts,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,New York Jets,NYJ,Miami Dolphins,MIA,away,+105,46.75,New York Jets at Miami Dolphins,2026-11-29T18:00Z,DraftKings,Scheduled,market
+12,Philadelphia Eagles,PHI,Dallas Cowboys,DAL,away,+105,46.75,Philadelphia Eagles at Dallas Cowboys,2026-11-26T21:30Z,DraftKings,Scheduled,market
+12,Pittsburgh Steelers,PIT,Denver Broncos,DEN,home,+102,47.39,Denver Broncos at Pittsburgh Steelers,2026-11-27T20:00Z,DraftKings,Scheduled,market
+12,San Francisco 49ers,SF,Seattle Seahawks,SEA,home,-110,50.00,Seattle Seahawks at San Francisco 49ers,2026-11-29T21:25Z,DraftKings,Scheduled,market
+12,Seattle Seahawks,SEA,San Francisco 49ers,SF,away,-110,50.00,Seattle Seahawks at San Francisco 49ers,2026-11-29T21:25Z,DraftKings,Scheduled,market
+12,Tampa Bay Buccaneers,TB,Carolina Panthers,CAR,home,-198,63.69,Carolina Panthers at Tampa Bay Buccaneers,2026-12-01T01:15Z,DraftKings,Scheduled,market
+12,Tennessee Titans,TEN,Jacksonville Jaguars,JAX,away,+195,32.50,Tennessee Titans at Jacksonville Jaguars,2026-11-29T21:05Z,DraftKings,Scheduled,market
+12,Washington Commanders,WSH,Arizona Cardinals,ARI,away,-218,65.75,Washington Commanders at Arizona Cardinals,2026-11-29T21:25Z,DraftKings,Scheduled,market
+13,Arizona Cardinals,ARI,Philadelphia Eagles,PHI,home,+310,23.41,Philadelphia Eagles at Arizona Cardinals,2026-12-06T21:05Z,DraftKings,Scheduled,market
+13,Atlanta Falcons,ATL,Detroit Lions,DET,home,+154,37.75,Detroit Lions at Atlanta Falcons,2026-12-06T18:00Z,DraftKings,Scheduled,market
 13,Baltimore Ravens,BAL,BYE,BYE,,,,,,,Bye,
-13,Buffalo Bills,BUF,New England Patriots,NE,away,,56.46,Buffalo Bills at New England Patriots,2026-12-06T21:25Z,ESPN FPI,Scheduled,fpi
-13,Carolina Panthers,CAR,Minnesota Vikings,MIN,away,,40.21,Carolina Panthers at Minnesota Vikings,2026-12-06T21:25Z,ESPN FPI,Scheduled,fpi
-13,Chicago Bears,CHI,Jacksonville Jaguars,JAX,home,,58.23,Jacksonville Jaguars at Chicago Bears,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Cincinnati Bengals,CIN,Cleveland Browns,CLE,away,,70.29,Cincinnati Bengals at Cleveland Browns,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Cleveland Browns,CLE,Cincinnati Bengals,CIN,home,,29.71,Cincinnati Bengals at Cleveland Browns,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Dallas Cowboys,DAL,Seattle Seahawks,SEA,away,,42.80,Dallas Cowboys at Seattle Seahawks,2026-12-08T01:15Z,ESPN FPI,Scheduled,fpi
-13,Denver Broncos,DEN,Miami Dolphins,MIA,home,,83.99,Miami Dolphins at Denver Broncos,2026-12-06T21:05Z,ESPN FPI,Scheduled,fpi
-13,Detroit Lions,DET,Atlanta Falcons,ATL,away,,54.51,Detroit Lions at Atlanta Falcons,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Green Bay Packers,GB,New Orleans Saints,NO,away,,49.52,Green Bay Packers at New Orleans Saints,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Houston Texans,HOU,Pittsburgh Steelers,PIT,away,,54.49,Houston Texans at Pittsburgh Steelers,2026-12-07T01:20Z,ESPN FPI,Scheduled,fpi
+13,Buffalo Bills,BUF,New England Patriots,NE,away,+102,47.39,Buffalo Bills at New England Patriots,2026-12-06T21:25Z,DraftKings,Scheduled,market
+13,Carolina Panthers,CAR,Minnesota Vikings,MIN,away,+164,36.31,Carolina Panthers at Minnesota Vikings,2026-12-06T21:25Z,DraftKings,Scheduled,market
+13,Chicago Bears,CHI,Jacksonville Jaguars,JAX,home,-155,58.30,Jacksonville Jaguars at Chicago Bears,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Cincinnati Bengals,CIN,Cleveland Browns,CLE,away,-225,66.36,Cincinnati Bengals at Cleveland Browns,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Cleveland Browns,CLE,Cincinnati Bengals,CIN,home,+185,33.64,Cincinnati Bengals at Cleveland Browns,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Dallas Cowboys,DAL,Seattle Seahawks,SEA,away,+185,33.64,Dallas Cowboys at Seattle Seahawks,2026-12-08T01:15Z,DraftKings,Scheduled,market
+13,Denver Broncos,DEN,Miami Dolphins,MIA,home,-470,79.14,Miami Dolphins at Denver Broncos,2026-12-06T21:05Z,DraftKings,Scheduled,market
+13,Detroit Lions,DET,Atlanta Falcons,ATL,away,-185,62.25,Detroit Lions at Atlanta Falcons,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Green Bay Packers,GB,New Orleans Saints,NO,away,-225,66.36,Green Bay Packers at New Orleans Saints,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Houston Texans,HOU,Pittsburgh Steelers,PIT,away,-122,52.61,Houston Texans at Pittsburgh Steelers,2026-12-07T01:20Z,DraftKings,Scheduled,market
 13,Indianapolis Colts,IND,BYE,BYE,,,,,,,Bye,
-13,Jacksonville Jaguars,JAX,Chicago Bears,CHI,away,,41.77,Jacksonville Jaguars at Chicago Bears,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Kansas City Chiefs,KC,Los Angeles Rams,LAR,away,,43.00,Kansas City Chiefs at Los Angeles Rams,2026-12-04T01:15Z,ESPN FPI,Scheduled,fpi
+13,Jacksonville Jaguars,JAX,Chicago Bears,CHI,away,+130,41.70,Jacksonville Jaguars at Chicago Bears,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Kansas City Chiefs,KC,Los Angeles Rams,LAR,away,+170,35.53,Kansas City Chiefs at Los Angeles Rams,2026-12-04T01:15Z,DraftKings,Scheduled,market
 13,Las Vegas Raiders,LV,BYE,BYE,,,,,,,Bye,
-13,Los Angeles Chargers,LAC,Tampa Bay Buccaneers,TB,away,,49.52,Los Angeles Chargers at Tampa Bay Buccaneers,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Los Angeles Rams,LAR,Kansas City Chiefs,KC,home,,57.00,Kansas City Chiefs at Los Angeles Rams,2026-12-04T01:15Z,ESPN FPI,Scheduled,fpi
-13,Miami Dolphins,MIA,Denver Broncos,DEN,away,,16.01,Miami Dolphins at Denver Broncos,2026-12-06T21:05Z,ESPN FPI,Scheduled,fpi
-13,Minnesota Vikings,MIN,Carolina Panthers,CAR,home,,59.79,Carolina Panthers at Minnesota Vikings,2026-12-06T21:25Z,ESPN FPI,Scheduled,fpi
-13,New England Patriots,NE,Buffalo Bills,BUF,home,,43.54,Buffalo Bills at New England Patriots,2026-12-06T21:25Z,ESPN FPI,Scheduled,fpi
-13,New Orleans Saints,NO,Green Bay Packers,GB,home,,50.48,Green Bay Packers at New Orleans Saints,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,New York Giants,NYG,San Francisco 49ers,SF,home,,12.05,San Francisco 49ers at New York Giants,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
+13,Los Angeles Chargers,LAC,Tampa Bay Buccaneers,TB,away,-135,55.14,Los Angeles Chargers at Tampa Bay Buccaneers,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Los Angeles Rams,LAR,Kansas City Chiefs,KC,home,-205,64.47,Kansas City Chiefs at Los Angeles Rams,2026-12-04T01:15Z,DraftKings,Scheduled,market
+13,Miami Dolphins,MIA,Denver Broncos,DEN,away,+360,20.86,Miami Dolphins at Denver Broncos,2026-12-06T21:05Z,DraftKings,Scheduled,market
+13,Minnesota Vikings,MIN,Carolina Panthers,CAR,home,-198,63.69,Carolina Panthers at Minnesota Vikings,2026-12-06T21:25Z,DraftKings,Scheduled,market
+13,New England Patriots,NE,Buffalo Bills,BUF,home,-122,52.61,Buffalo Bills at New England Patriots,2026-12-06T21:25Z,DraftKings,Scheduled,market
+13,New Orleans Saints,NO,Green Bay Packers,GB,home,+185,33.64,Green Bay Packers at New Orleans Saints,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,New York Giants,NYG,San Francisco 49ers,SF,home,+140,40.04,San Francisco 49ers at New York Giants,2026-12-06T18:00Z,DraftKings,Scheduled,market
 13,New York Jets,NYJ,BYE,BYE,,,,,,,Bye,
-13,Philadelphia Eagles,PHI,Arizona Cardinals,ARI,away,,58.17,Philadelphia Eagles at Arizona Cardinals,2026-12-06T21:05Z,ESPN FPI,Scheduled,fpi
-13,Pittsburgh Steelers,PIT,Houston Texans,HOU,home,,45.51,Houston Texans at Pittsburgh Steelers,2026-12-07T01:20Z,ESPN FPI,Scheduled,fpi
-13,San Francisco 49ers,SF,New York Giants,NYG,away,,87.95,San Francisco 49ers at New York Giants,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Seattle Seahawks,SEA,Dallas Cowboys,DAL,home,,57.20,Dallas Cowboys at Seattle Seahawks,2026-12-08T01:15Z,ESPN FPI,Scheduled,fpi
-13,Tampa Bay Buccaneers,TB,Los Angeles Chargers,LAC,home,,50.48,Los Angeles Chargers at Tampa Bay Buccaneers,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Tennessee Titans,TEN,Washington Commanders,WSH,home,,48.89,Washington Commanders at Tennessee Titans,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
-13,Washington Commanders,WSH,Tennessee Titans,TEN,away,,51.11,Washington Commanders at Tennessee Titans,2026-12-06T18:00Z,ESPN FPI,Scheduled,fpi
+13,Philadelphia Eagles,PHI,Arizona Cardinals,ARI,away,-395,76.59,Philadelphia Eagles at Arizona Cardinals,2026-12-06T21:05Z,DraftKings,Scheduled,market
+13,Pittsburgh Steelers,PIT,Houston Texans,HOU,home,+102,47.39,Houston Texans at Pittsburgh Steelers,2026-12-07T01:20Z,DraftKings,Scheduled,market
+13,San Francisco 49ers,SF,New York Giants,NYG,away,-166,59.96,San Francisco 49ers at New York Giants,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Seattle Seahawks,SEA,Dallas Cowboys,DAL,home,-225,66.36,Dallas Cowboys at Seattle Seahawks,2026-12-08T01:15Z,DraftKings,Scheduled,market
+13,Tampa Bay Buccaneers,TB,Los Angeles Chargers,LAC,home,+114,44.86,Los Angeles Chargers at Tampa Bay Buccaneers,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Tennessee Titans,TEN,Washington Commanders,WSH,home,+105,46.75,Washington Commanders at Tennessee Titans,2026-12-06T18:00Z,DraftKings,Scheduled,market
+13,Washington Commanders,WSH,Tennessee Titans,TEN,away,-125,53.25,Washington Commanders at Tennessee Titans,2026-12-06T18:00Z,DraftKings,Scheduled,market
 14,Arizona Cardinals,ARI,BYE,BYE,,,,,,,Bye,
-14,Atlanta Falcons,ATL,Cleveland Browns,CLE,away,,57.88,Atlanta Falcons at Cleveland Browns,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Baltimore Ravens,BAL,Tampa Bay Buccaneers,TB,home,,70.80,Tampa Bay Buccaneers at Baltimore Ravens,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Buffalo Bills,BUF,Green Bay Packers,GB,away,,63.29,Buffalo Bills at Green Bay Packers,2026-12-14T01:20Z,ESPN FPI,Scheduled,fpi
-14,Carolina Panthers,CAR,New Orleans Saints,NO,home,,60.41,New Orleans Saints at Carolina Panthers,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Chicago Bears,CHI,Miami Dolphins,MIA,away,,86.91,Chicago Bears at Miami Dolphins,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Cincinnati Bengals,CIN,Kansas City Chiefs,KC,home,,47.26,Kansas City Chiefs at Cincinnati Bengals,2026-12-13T21:25Z,ESPN FPI,Scheduled,fpi
-14,Cleveland Browns,CLE,Atlanta Falcons,ATL,home,,42.12,Atlanta Falcons at Cleveland Browns,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
+14,Atlanta Falcons,ATL,Cleveland Browns,CLE,away,+105,46.75,Atlanta Falcons at Cleveland Browns,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Baltimore Ravens,BAL,Tampa Bay Buccaneers,TB,home,-258,69.08,Tampa Bay Buccaneers at Baltimore Ravens,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Buffalo Bills,BUF,Green Bay Packers,GB,away,+105,46.75,Buffalo Bills at Green Bay Packers,2026-12-14T01:20Z,DraftKings,Scheduled,market
+14,Carolina Panthers,CAR,New Orleans Saints,NO,home,-135,55.14,New Orleans Saints at Carolina Panthers,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Chicago Bears,CHI,Miami Dolphins,MIA,away,-250,68.54,Chicago Bears at Miami Dolphins,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Cincinnati Bengals,CIN,Kansas City Chiefs,KC,home,-125,53.25,Kansas City Chiefs at Cincinnati Bengals,2026-12-13T21:25Z,DraftKings,Scheduled,market
+14,Cleveland Browns,CLE,Atlanta Falcons,ATL,home,-125,53.25,Atlanta Falcons at Cleveland Browns,2026-12-13T18:00Z,DraftKings,Scheduled,market
 14,Dallas Cowboys,DAL,BYE,BYE,,,,,,,Bye,
-14,Denver Broncos,DEN,New York Jets,NYJ,away,,65.23,Denver Broncos at New York Jets,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Detroit Lions,DET,Tennessee Titans,TEN,home,,73.61,Tennessee Titans at Detroit Lions,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Green Bay Packers,GB,Buffalo Bills,BUF,home,,36.71,Buffalo Bills at Green Bay Packers,2026-12-14T01:20Z,ESPN FPI,Scheduled,fpi
-14,Houston Texans,HOU,Washington Commanders,WSH,away,,58.69,Houston Texans at Washington Commanders,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Indianapolis Colts,IND,Philadelphia Eagles,PHI,away,,50.59,Indianapolis Colts at Philadelphia Eagles,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Jacksonville Jaguars,JAX,Pittsburgh Steelers,PIT,home,,75.37,Pittsburgh Steelers at Jacksonville Jaguars,2026-12-15T01:15Z,ESPN FPI,Scheduled,fpi
-14,Kansas City Chiefs,KC,Cincinnati Bengals,CIN,away,,52.74,Kansas City Chiefs at Cincinnati Bengals,2026-12-13T21:25Z,ESPN FPI,Scheduled,fpi
-14,Las Vegas Raiders,LV,Los Angeles Chargers,LAC,home,,51.22,Los Angeles Chargers at Las Vegas Raiders,2026-12-13T21:05Z,ESPN FPI,Scheduled,fpi
-14,Los Angeles Chargers,LAC,Las Vegas Raiders,LV,away,,48.78,Los Angeles Chargers at Las Vegas Raiders,2026-12-13T21:05Z,ESPN FPI,Scheduled,fpi
-14,Los Angeles Rams,LAR,San Francisco 49ers,SF,away,,38.37,Los Angeles Rams at San Francisco 49ers,2026-12-13T21:25Z,ESPN FPI,Scheduled,fpi
-14,Miami Dolphins,MIA,Chicago Bears,CHI,home,,13.09,Chicago Bears at Miami Dolphins,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Minnesota Vikings,MIN,New England Patriots,NE,away,,43.86,Minnesota Vikings at New England Patriots,2026-12-11T01:15Z,ESPN FPI,Scheduled,fpi
-14,New England Patriots,NE,Minnesota Vikings,MIN,home,,56.14,Minnesota Vikings at New England Patriots,2026-12-11T01:15Z,ESPN FPI,Scheduled,fpi
-14,New Orleans Saints,NO,Carolina Panthers,CAR,away,,39.59,New Orleans Saints at Carolina Panthers,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,New York Giants,NYG,Seattle Seahawks,SEA,away,,12.51,New York Giants at Seattle Seahawks,2026-12-13T21:25Z,ESPN FPI,Scheduled,fpi
-14,New York Jets,NYJ,Denver Broncos,DEN,home,,34.77,Denver Broncos at New York Jets,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Philadelphia Eagles,PHI,Indianapolis Colts,IND,home,,49.41,Indianapolis Colts at Philadelphia Eagles,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Pittsburgh Steelers,PIT,Jacksonville Jaguars,JAX,away,,24.63,Pittsburgh Steelers at Jacksonville Jaguars,2026-12-15T01:15Z,ESPN FPI,Scheduled,fpi
-14,San Francisco 49ers,SF,Los Angeles Rams,LAR,home,,61.63,Los Angeles Rams at San Francisco 49ers,2026-12-13T21:25Z,ESPN FPI,Scheduled,fpi
-14,Seattle Seahawks,SEA,New York Giants,NYG,home,,87.49,New York Giants at Seattle Seahawks,2026-12-13T21:25Z,ESPN FPI,Scheduled,fpi
-14,Tampa Bay Buccaneers,TB,Baltimore Ravens,BAL,away,,29.20,Tampa Bay Buccaneers at Baltimore Ravens,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Tennessee Titans,TEN,Detroit Lions,DET,away,,26.39,Tennessee Titans at Detroit Lions,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-14,Washington Commanders,WSH,Houston Texans,HOU,home,,41.31,Houston Texans at Washington Commanders,2026-12-13T18:00Z,ESPN FPI,Scheduled,fpi
-15,Arizona Cardinals,ARI,New York Jets,NYJ,home,,54.30,New York Jets at Arizona Cardinals,2026-12-20T21:05Z,ESPN FPI,Scheduled,fpi
-15,Atlanta Falcons,ATL,Washington Commanders,WSH,away,,50.64,Atlanta Falcons at Washington Commanders,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Baltimore Ravens,BAL,Pittsburgh Steelers,PIT,away,,61.99,Baltimore Ravens at Pittsburgh Steelers,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Buffalo Bills,BUF,Chicago Bears,CHI,home,,49.46,Chicago Bears at Buffalo Bills,2026-12-20T01:20Z,ESPN FPI,Scheduled,fpi
-15,Carolina Panthers,CAR,Cincinnati Bengals,CIN,home,,43.16,Cincinnati Bengals at Carolina Panthers,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Chicago Bears,CHI,Buffalo Bills,BUF,away,,50.54,Chicago Bears at Buffalo Bills,2026-12-20T01:20Z,ESPN FPI,Scheduled,fpi
-15,Cincinnati Bengals,CIN,Carolina Panthers,CAR,away,,56.84,Cincinnati Bengals at Carolina Panthers,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Cleveland Browns,CLE,New York Giants,NYG,away,,54.47,Cleveland Browns at New York Giants,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Dallas Cowboys,DAL,Los Angeles Rams,LAR,away,,40.34,Dallas Cowboys at Los Angeles Rams,2026-12-20T21:25Z,ESPN FPI,Scheduled,fpi
-15,Denver Broncos,DEN,Las Vegas Raiders,LV,away,,54.78,Denver Broncos at Las Vegas Raiders,2026-12-20T21:25Z,ESPN FPI,Scheduled,fpi
-15,Detroit Lions,DET,Minnesota Vikings,MIN,away,,47.00,Detroit Lions at Minnesota Vikings,2026-12-21T01:20Z,ESPN FPI,Scheduled,fpi
-15,Green Bay Packers,GB,Miami Dolphins,MIA,home,,77.31,Miami Dolphins at Green Bay Packers,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Houston Texans,HOU,Jacksonville Jaguars,JAX,home,,42.03,Jacksonville Jaguars at Houston Texans,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Indianapolis Colts,IND,Tennessee Titans,TEN,away,,58.51,Indianapolis Colts at Tennessee Titans,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Jacksonville Jaguars,JAX,Houston Texans,HOU,away,,57.97,Jacksonville Jaguars at Houston Texans,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Kansas City Chiefs,KC,New England Patriots,NE,home,,66.84,New England Patriots at Kansas City Chiefs,2026-12-22T01:15Z,ESPN FPI,Scheduled,fpi
-15,Las Vegas Raiders,LV,Denver Broncos,DEN,home,,45.22,Denver Broncos at Las Vegas Raiders,2026-12-20T21:25Z,ESPN FPI,Scheduled,fpi
-15,Los Angeles Chargers,LAC,San Francisco 49ers,SF,home,,30.58,San Francisco 49ers at Los Angeles Chargers,2026-12-18T01:15Z,ESPN FPI,Scheduled,fpi
-15,Los Angeles Rams,LAR,Dallas Cowboys,DAL,home,,59.66,Dallas Cowboys at Los Angeles Rams,2026-12-20T21:25Z,ESPN FPI,Scheduled,fpi
-15,Miami Dolphins,MIA,Green Bay Packers,GB,away,,22.69,Miami Dolphins at Green Bay Packers,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Minnesota Vikings,MIN,Detroit Lions,DET,home,,53.00,Detroit Lions at Minnesota Vikings,2026-12-21T01:20Z,ESPN FPI,Scheduled,fpi
-15,New England Patriots,NE,Kansas City Chiefs,KC,away,,33.16,New England Patriots at Kansas City Chiefs,2026-12-22T01:15Z,ESPN FPI,Scheduled,fpi
-15,New Orleans Saints,NO,Tampa Bay Buccaneers,TB,away,,40.77,New Orleans Saints at Tampa Bay Buccaneers,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,New York Giants,NYG,Cleveland Browns,CLE,home,,45.53,Cleveland Browns at New York Giants,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,New York Jets,NYJ,Arizona Cardinals,ARI,away,,45.70,New York Jets at Arizona Cardinals,2026-12-20T21:05Z,ESPN FPI,Scheduled,fpi
-15,Philadelphia Eagles,PHI,Seattle Seahawks,SEA,home,,34.86,Seattle Seahawks at Philadelphia Eagles,2026-12-19T22:00Z,ESPN FPI,Scheduled,fpi
-15,Pittsburgh Steelers,PIT,Baltimore Ravens,BAL,home,,38.01,Baltimore Ravens at Pittsburgh Steelers,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,San Francisco 49ers,SF,Los Angeles Chargers,LAC,away,,69.42,San Francisco 49ers at Los Angeles Chargers,2026-12-18T01:15Z,ESPN FPI,Scheduled,fpi
-15,Seattle Seahawks,SEA,Philadelphia Eagles,PHI,away,,65.14,Seattle Seahawks at Philadelphia Eagles,2026-12-19T22:00Z,ESPN FPI,Scheduled,fpi
-15,Tampa Bay Buccaneers,TB,New Orleans Saints,NO,home,,59.23,New Orleans Saints at Tampa Bay Buccaneers,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Tennessee Titans,TEN,Indianapolis Colts,IND,home,,41.49,Indianapolis Colts at Tennessee Titans,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-15,Washington Commanders,WSH,Atlanta Falcons,ATL,home,,49.36,Atlanta Falcons at Washington Commanders,2026-12-20T18:00Z,ESPN FPI,Scheduled,fpi
-16,Arizona Cardinals,ARI,New Orleans Saints,NO,away,,34.84,Arizona Cardinals at New Orleans Saints,2026-12-27T18:00Z,ESPN FPI,Scheduled,fpi
-16,Atlanta Falcons,ATL,Tampa Bay Buccaneers,TB,home,,55.38,Tampa Bay Buccaneers at Atlanta Falcons,2026-12-27T05:00Z,ESPN FPI,Scheduled,fpi
-16,Baltimore Ravens,BAL,Cleveland Browns,CLE,home,,80.45,Cleveland Browns at Baltimore Ravens,2026-12-27T18:00Z,ESPN FPI,Scheduled,fpi
-16,Buffalo Bills,BUF,Denver Broncos,DEN,away,,54.36,Buffalo Bills at Denver Broncos,2026-12-25T21:30Z,ESPN FPI,Scheduled,fpi
-16,Carolina Panthers,CAR,Pittsburgh Steelers,PIT,away,,47.54,Carolina Panthers at Pittsburgh Steelers,2026-12-27T05:00Z,ESPN FPI,Scheduled,fpi
-16,Chicago Bears,CHI,Green Bay Packers,GB,home,,77.33,Green Bay Packers at Chicago Bears,2026-12-25T18:00Z,ESPN FPI,Scheduled,fpi
-16,Cincinnati Bengals,CIN,Indianapolis Colts,IND,away,,55.11,Cincinnati Bengals at Indianapolis Colts,2026-12-27T05:00Z,ESPN FPI,Scheduled,fpi
-16,Cleveland Browns,CLE,Baltimore Ravens,BAL,away,,19.55,Cleveland Browns at Baltimore Ravens,2026-12-27T18:00Z,ESPN FPI,Scheduled,fpi
-16,Dallas Cowboys,DAL,Jacksonville Jaguars,JAX,home,,50.18,Jacksonville Jaguars at Dallas Cowboys,2026-12-28T01:20Z,ESPN FPI,Scheduled,fpi
-16,Denver Broncos,DEN,Buffalo Bills,BUF,home,,45.64,Buffalo Bills at Denver Broncos,2026-12-25T21:30Z,ESPN FPI,Scheduled,fpi
-16,Detroit Lions,DET,New York Giants,NYG,home,,81.19,New York Giants at Detroit Lions,2026-12-29T01:15Z,ESPN FPI,Scheduled,fpi
-16,Green Bay Packers,GB,Chicago Bears,CHI,away,,22.67,Green Bay Packers at Chicago Bears,2026-12-25T18:00Z,ESPN FPI,Scheduled,fpi
-16,Houston Texans,HOU,Philadelphia Eagles,PHI,away,,55.12,Houston Texans at Philadelphia Eagles,2026-12-25T01:15Z,ESPN FPI,Scheduled,fpi
-16,Indianapolis Colts,IND,Cincinnati Bengals,CIN,home,,44.89,Cincinnati Bengals at Indianapolis Colts,2026-12-27T05:00Z,ESPN FPI,Scheduled,fpi
-16,Jacksonville Jaguars,JAX,Dallas Cowboys,DAL,away,,49.82,Jacksonville Jaguars at Dallas Cowboys,2026-12-28T01:20Z,ESPN FPI,Scheduled,fpi
-16,Kansas City Chiefs,KC,San Francisco 49ers,SF,home,,45.33,San Francisco 49ers at Kansas City Chiefs,2026-12-27T21:25Z,ESPN FPI,Scheduled,fpi
-16,Las Vegas Raiders,LV,Tennessee Titans,TEN,home,,65.10,Tennessee Titans at Las Vegas Raiders,2026-12-27T21:05Z,ESPN FPI,Scheduled,fpi
-16,Los Angeles Chargers,LAC,Miami Dolphins,MIA,away,,73.40,Los Angeles Chargers at Miami Dolphins,2026-12-27T18:00Z,ESPN FPI,Scheduled,fpi
-16,Los Angeles Rams,LAR,Seattle Seahawks,SEA,away,,48.16,Los Angeles Rams at Seattle Seahawks,2026-12-26T01:15Z,ESPN FPI,Scheduled,fpi
-16,Miami Dolphins,MIA,Los Angeles Chargers,LAC,home,,26.60,Los Angeles Chargers at Miami Dolphins,2026-12-27T18:00Z,ESPN FPI,Scheduled,fpi
-16,Minnesota Vikings,MIN,Washington Commanders,WSH,home,,66.27,Washington Commanders at Minnesota Vikings,2026-12-27T05:00Z,ESPN FPI,Scheduled,fpi
-16,New England Patriots,NE,New York Jets,NYJ,away,,64.23,New England Patriots at New York Jets,2026-12-27T18:00Z,ESPN FPI,Scheduled,fpi
-16,New Orleans Saints,NO,Arizona Cardinals,ARI,home,,65.16,Arizona Cardinals at New Orleans Saints,2026-12-27T18:00Z,ESPN FPI,Scheduled,fpi
-16,New York Giants,NYG,Detroit Lions,DET,away,,18.81,New York Giants at Detroit Lions,2026-12-29T01:15Z,ESPN FPI,Scheduled,fpi
-16,New York Jets,NYJ,New England Patriots,NE,home,,35.77,New England Patriots at New York Jets,2026-12-27T18:00Z,ESPN FPI,Scheduled,fpi
-16,Philadelphia Eagles,PHI,Houston Texans,HOU,home,,44.88,Houston Texans at Philadelphia Eagles,2026-12-25T01:15Z,ESPN FPI,Scheduled,fpi
-16,Pittsburgh Steelers,PIT,Carolina Panthers,CAR,home,,52.46,Carolina Panthers at Pittsburgh Steelers,2026-12-27T05:00Z,ESPN FPI,Scheduled,fpi
-16,San Francisco 49ers,SF,Kansas City Chiefs,KC,away,,54.67,San Francisco 49ers at Kansas City Chiefs,2026-12-27T21:25Z,ESPN FPI,Scheduled,fpi
-16,Seattle Seahawks,SEA,Los Angeles Rams,LAR,home,,51.84,Los Angeles Rams at Seattle Seahawks,2026-12-26T01:15Z,ESPN FPI,Scheduled,fpi
-16,Tampa Bay Buccaneers,TB,Atlanta Falcons,ATL,away,,44.62,Tampa Bay Buccaneers at Atlanta Falcons,2026-12-27T05:00Z,ESPN FPI,Scheduled,fpi
-16,Tennessee Titans,TEN,Las Vegas Raiders,LV,away,,34.90,Tennessee Titans at Las Vegas Raiders,2026-12-27T21:05Z,ESPN FPI,Scheduled,fpi
-16,Washington Commanders,WSH,Minnesota Vikings,MIN,away,,33.73,Washington Commanders at Minnesota Vikings,2026-12-27T05:00Z,ESPN FPI,Scheduled,fpi
-17,Arizona Cardinals,ARI,Las Vegas Raiders,LV,home,,41.77,Las Vegas Raiders at Arizona Cardinals,2027-01-03T21:05Z,ESPN FPI,Scheduled,fpi
-17,Atlanta Falcons,ATL,New Orleans Saints,NO,home,,59.18,New Orleans Saints at Atlanta Falcons,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Baltimore Ravens,BAL,Cincinnati Bengals,CIN,away,,47.65,Baltimore Ravens at Cincinnati Bengals,2027-01-01T01:15Z,ESPN FPI,Scheduled,fpi
-17,Buffalo Bills,BUF,Miami Dolphins,MIA,away,,83.05,Buffalo Bills at Miami Dolphins,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Carolina Panthers,CAR,Seattle Seahawks,SEA,home,,37.66,Seattle Seahawks at Carolina Panthers,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Chicago Bears,CHI,Detroit Lions,DET,home,,70.24,Detroit Lions at Chicago Bears,2027-01-03T21:25Z,ESPN FPI,Scheduled,fpi
-17,Cincinnati Bengals,CIN,Baltimore Ravens,BAL,home,,52.35,Baltimore Ravens at Cincinnati Bengals,2027-01-01T01:15Z,ESPN FPI,Scheduled,fpi
-17,Cleveland Browns,CLE,Indianapolis Colts,IND,home,,39.20,Indianapolis Colts at Cleveland Browns,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Dallas Cowboys,DAL,New York Giants,NYG,home,,86.25,New York Giants at Dallas Cowboys,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Denver Broncos,DEN,New England Patriots,NE,away,,47.25,Denver Broncos at New England Patriots,2027-01-03T05:00Z,ESPN FPI,Scheduled,fpi
-17,Detroit Lions,DET,Chicago Bears,CHI,away,,29.76,Detroit Lions at Chicago Bears,2027-01-03T21:25Z,ESPN FPI,Scheduled,fpi
-17,Green Bay Packers,GB,Houston Texans,HOU,home,,46.48,Houston Texans at Green Bay Packers,2027-01-05T01:15Z,ESPN FPI,Scheduled,fpi
-17,Houston Texans,HOU,Green Bay Packers,GB,away,,53.52,Houston Texans at Green Bay Packers,2027-01-05T01:15Z,ESPN FPI,Scheduled,fpi
-17,Indianapolis Colts,IND,Cleveland Browns,CLE,away,,60.80,Indianapolis Colts at Cleveland Browns,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Jacksonville Jaguars,JAX,Washington Commanders,WSH,home,,78.14,Washington Commanders at Jacksonville Jaguars,2027-01-03T05:00Z,ESPN FPI,Scheduled,fpi
-17,Kansas City Chiefs,KC,Los Angeles Chargers,LAC,away,,61.28,Kansas City Chiefs at Los Angeles Chargers,2027-01-03T05:00Z,ESPN FPI,Scheduled,fpi
-17,Las Vegas Raiders,LV,Arizona Cardinals,ARI,away,,58.23,Las Vegas Raiders at Arizona Cardinals,2027-01-03T21:05Z,ESPN FPI,Scheduled,fpi
-17,Los Angeles Chargers,LAC,Kansas City Chiefs,KC,home,,38.72,Kansas City Chiefs at Los Angeles Chargers,2027-01-03T05:00Z,ESPN FPI,Scheduled,fpi
-17,Los Angeles Rams,LAR,Tampa Bay Buccaneers,TB,away,,67.28,Los Angeles Rams at Tampa Bay Buccaneers,2027-01-03T05:00Z,ESPN FPI,Scheduled,fpi
-17,Miami Dolphins,MIA,Buffalo Bills,BUF,home,,16.95,Buffalo Bills at Miami Dolphins,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Minnesota Vikings,MIN,New York Jets,NYJ,away,,64.26,Minnesota Vikings at New York Jets,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,New England Patriots,NE,Denver Broncos,DEN,home,,52.75,Denver Broncos at New England Patriots,2027-01-03T05:00Z,ESPN FPI,Scheduled,fpi
-17,New Orleans Saints,NO,Atlanta Falcons,ATL,away,,40.82,New Orleans Saints at Atlanta Falcons,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,New York Giants,NYG,Dallas Cowboys,DAL,away,,13.75,New York Giants at Dallas Cowboys,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,New York Jets,NYJ,Minnesota Vikings,MIN,home,,35.74,Minnesota Vikings at New York Jets,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Philadelphia Eagles,PHI,San Francisco 49ers,SF,away,,18.44,Philadelphia Eagles at San Francisco 49ers,2027-01-04T01:20Z,ESPN FPI,Scheduled,fpi
-17,Pittsburgh Steelers,PIT,Tennessee Titans,TEN,away,,55.29,Pittsburgh Steelers at Tennessee Titans,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,San Francisco 49ers,SF,Philadelphia Eagles,PHI,home,,81.56,Philadelphia Eagles at San Francisco 49ers,2027-01-04T01:20Z,ESPN FPI,Scheduled,fpi
-17,Seattle Seahawks,SEA,Carolina Panthers,CAR,away,,62.34,Seattle Seahawks at Carolina Panthers,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Tampa Bay Buccaneers,TB,Los Angeles Rams,LAR,home,,32.72,Los Angeles Rams at Tampa Bay Buccaneers,2027-01-03T05:00Z,ESPN FPI,Scheduled,fpi
-17,Tennessee Titans,TEN,Pittsburgh Steelers,PIT,home,,44.71,Pittsburgh Steelers at Tennessee Titans,2027-01-03T18:00Z,ESPN FPI,Scheduled,fpi
-17,Washington Commanders,WSH,Jacksonville Jaguars,JAX,away,,21.86,Washington Commanders at Jacksonville Jaguars,2027-01-03T05:00Z,ESPN FPI,Scheduled,fpi
-18,Arizona Cardinals,ARI,San Francisco 49ers,SF,home,,16.88,San Francisco 49ers at Arizona Cardinals,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Atlanta Falcons,ATL,Carolina Panthers,CAR,away,,43.69,Atlanta Falcons at Carolina Panthers,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Baltimore Ravens,BAL,Pittsburgh Steelers,PIT,home,,70.13,Pittsburgh Steelers at Baltimore Ravens,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Buffalo Bills,BUF,New York Jets,NYJ,home,,81.45,New York Jets at Buffalo Bills,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Carolina Panthers,CAR,Atlanta Falcons,ATL,home,,56.31,Atlanta Falcons at Carolina Panthers,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Chicago Bears,CHI,Minnesota Vikings,MIN,away,,62.34,Chicago Bears at Minnesota Vikings,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Cincinnati Bengals,CIN,Cleveland Browns,CLE,home,,78.34,Cleveland Browns at Cincinnati Bengals,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Cleveland Browns,CLE,Cincinnati Bengals,CIN,away,,21.66,Cleveland Browns at Cincinnati Bengals,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Dallas Cowboys,DAL,Washington Commanders,WSH,away,,66.04,Dallas Cowboys at Washington Commanders,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Denver Broncos,DEN,Los Angeles Chargers,LAC,home,,60.27,Los Angeles Chargers at Denver Broncos,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Detroit Lions,DET,Green Bay Packers,GB,away,,53.80,Detroit Lions at Green Bay Packers,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Green Bay Packers,GB,Detroit Lions,DET,home,,46.20,Detroit Lions at Green Bay Packers,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Houston Texans,HOU,Tennessee Titans,TEN,home,,72.28,Tennessee Titans at Houston Texans,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Indianapolis Colts,IND,Jacksonville Jaguars,JAX,home,,37.14,Jacksonville Jaguars at Indianapolis Colts,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Jacksonville Jaguars,JAX,Indianapolis Colts,IND,away,,62.86,Jacksonville Jaguars at Indianapolis Colts,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Kansas City Chiefs,KC,Las Vegas Raiders,LV,home,,74.22,Las Vegas Raiders at Kansas City Chiefs,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Las Vegas Raiders,LV,Kansas City Chiefs,KC,away,,25.78,Las Vegas Raiders at Kansas City Chiefs,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Los Angeles Chargers,LAC,Denver Broncos,DEN,away,,39.73,Los Angeles Chargers at Denver Broncos,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Los Angeles Rams,LAR,Seattle Seahawks,SEA,home,,58.25,Seattle Seahawks at Los Angeles Rams,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Miami Dolphins,MIA,New England Patriots,NE,away,,17.97,Miami Dolphins at New England Patriots,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Minnesota Vikings,MIN,Chicago Bears,CHI,home,,37.66,Chicago Bears at Minnesota Vikings,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,New England Patriots,NE,Miami Dolphins,MIA,home,,82.03,Miami Dolphins at New England Patriots,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,New Orleans Saints,NO,Tampa Bay Buccaneers,TB,home,,50.73,Tampa Bay Buccaneers at New Orleans Saints,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,New York Giants,NYG,Philadelphia Eagles,PHI,home,,34.95,Philadelphia Eagles at New York Giants,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,New York Jets,NYJ,Buffalo Bills,BUF,away,,18.55,New York Jets at Buffalo Bills,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Philadelphia Eagles,PHI,New York Giants,NYG,away,,65.05,Philadelphia Eagles at New York Giants,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Pittsburgh Steelers,PIT,Baltimore Ravens,BAL,away,,29.87,Pittsburgh Steelers at Baltimore Ravens,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,San Francisco 49ers,SF,Arizona Cardinals,ARI,away,,83.12,San Francisco 49ers at Arizona Cardinals,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Seattle Seahawks,SEA,Los Angeles Rams,LAR,away,,41.75,Seattle Seahawks at Los Angeles Rams,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Tampa Bay Buccaneers,TB,New Orleans Saints,NO,away,,49.27,Tampa Bay Buccaneers at New Orleans Saints,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Tennessee Titans,TEN,Houston Texans,HOU,away,,27.72,Tennessee Titans at Houston Texans,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
-18,Washington Commanders,WSH,Dallas Cowboys,DAL,home,,33.96,Dallas Cowboys at Washington Commanders,2027-01-10T05:00Z,ESPN FPI,Scheduled,fpi
+14,Denver Broncos,DEN,New York Jets,NYJ,away,-230,66.90,Denver Broncos at New York Jets,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Detroit Lions,DET,Tennessee Titans,TEN,home,-360,75.08,Tennessee Titans at Detroit Lions,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Green Bay Packers,GB,Buffalo Bills,BUF,home,-125,53.25,Buffalo Bills at Green Bay Packers,2026-12-14T01:20Z,DraftKings,Scheduled,market
+14,Houston Texans,HOU,Washington Commanders,WSH,away,-122,52.61,Houston Texans at Washington Commanders,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Indianapolis Colts,IND,Philadelphia Eagles,PHI,away,+205,31.46,Indianapolis Colts at Philadelphia Eagles,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Jacksonville Jaguars,JAX,Pittsburgh Steelers,PIT,home,-162,59.34,Pittsburgh Steelers at Jacksonville Jaguars,2026-12-15T01:15Z,DraftKings,Scheduled,market
+14,Kansas City Chiefs,KC,Cincinnati Bengals,CIN,away,+105,46.75,Kansas City Chiefs at Cincinnati Bengals,2026-12-13T21:25Z,DraftKings,Scheduled,market
+14,Las Vegas Raiders,LV,Los Angeles Chargers,LAC,home,+185,33.64,Los Angeles Chargers at Las Vegas Raiders,2026-12-13T21:05Z,DraftKings,Scheduled,market
+14,Los Angeles Chargers,LAC,Las Vegas Raiders,LV,away,-225,66.36,Los Angeles Chargers at Las Vegas Raiders,2026-12-13T21:05Z,DraftKings,Scheduled,market
+14,Los Angeles Rams,LAR,San Francisco 49ers,SF,away,-130,54.27,Los Angeles Rams at San Francisco 49ers,2026-12-13T21:25Z,DraftKings,Scheduled,market
+14,Miami Dolphins,MIA,Chicago Bears,CHI,home,+205,31.46,Chicago Bears at Miami Dolphins,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Minnesota Vikings,MIN,New England Patriots,NE,away,+180,34.25,Minnesota Vikings at New England Patriots,2026-12-11T01:15Z,DraftKings,Scheduled,market
+14,New England Patriots,NE,Minnesota Vikings,MIN,home,-218,65.75,Minnesota Vikings at New England Patriots,2026-12-11T01:15Z,DraftKings,Scheduled,market
+14,New Orleans Saints,NO,Carolina Panthers,CAR,away,+114,44.86,New Orleans Saints at Carolina Panthers,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,New York Giants,NYG,Seattle Seahawks,SEA,away,+295,24.28,New York Giants at Seattle Seahawks,2026-12-13T21:25Z,DraftKings,Scheduled,market
+14,New York Jets,NYJ,Denver Broncos,DEN,home,+190,33.10,Denver Broncos at New York Jets,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Philadelphia Eagles,PHI,Indianapolis Colts,IND,home,-250,68.54,Indianapolis Colts at Philadelphia Eagles,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Pittsburgh Steelers,PIT,Jacksonville Jaguars,JAX,away,+136,40.66,Pittsburgh Steelers at Jacksonville Jaguars,2026-12-15T01:15Z,DraftKings,Scheduled,market
+14,San Francisco 49ers,SF,Los Angeles Rams,LAR,home,+110,45.73,Los Angeles Rams at San Francisco 49ers,2026-12-13T21:25Z,DraftKings,Scheduled,market
+14,Seattle Seahawks,SEA,New York Giants,NYG,home,-375,75.72,New York Giants at Seattle Seahawks,2026-12-13T21:25Z,DraftKings,Scheduled,market
+14,Tampa Bay Buccaneers,TB,Baltimore Ravens,BAL,away,+210,30.92,Tampa Bay Buccaneers at Baltimore Ravens,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Tennessee Titans,TEN,Detroit Lions,DET,away,+285,24.92,Tennessee Titans at Detroit Lions,2026-12-13T18:00Z,DraftKings,Scheduled,market
+14,Washington Commanders,WSH,Houston Texans,HOU,home,+102,47.39,Houston Texans at Washington Commanders,2026-12-13T18:00Z,DraftKings,Scheduled,market
+15,Arizona Cardinals,ARI,New York Jets,NYJ,home,-110,50.00,New York Jets at Arizona Cardinals,2026-12-20T21:05Z,DraftKings,Scheduled,market
+15,Atlanta Falcons,ATL,Washington Commanders,WSH,away,+154,37.75,Atlanta Falcons at Washington Commanders,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Baltimore Ravens,BAL,Pittsburgh Steelers,PIT,away,-148,57.21,Baltimore Ravens at Pittsburgh Steelers,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Buffalo Bills,BUF,Chicago Bears,CHI,home,-185,62.25,Chicago Bears at Buffalo Bills,2026-12-20T01:20Z,DraftKings,Scheduled,market
+15,Carolina Panthers,CAR,Cincinnati Bengals,CIN,home,+124,42.79,Cincinnati Bengals at Carolina Panthers,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Chicago Bears,CHI,Buffalo Bills,BUF,away,+154,37.75,Chicago Bears at Buffalo Bills,2026-12-20T01:20Z,DraftKings,Scheduled,market
+15,Cincinnati Bengals,CIN,Carolina Panthers,CAR,away,-148,57.21,Cincinnati Bengals at Carolina Panthers,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Cleveland Browns,CLE,New York Giants,NYG,away,+170,35.53,Cleveland Browns at New York Giants,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Dallas Cowboys,DAL,Los Angeles Rams,LAR,away,+200,31.94,Dallas Cowboys at Los Angeles Rams,2026-12-20T21:25Z,DraftKings,Scheduled,market
+15,Denver Broncos,DEN,Las Vegas Raiders,LV,away,-205,64.47,Denver Broncos at Las Vegas Raiders,2026-12-20T21:25Z,DraftKings,Scheduled,market
+15,Detroit Lions,DET,Minnesota Vikings,MIN,away,-125,53.25,Detroit Lions at Minnesota Vikings,2026-12-21T01:20Z,DraftKings,Scheduled,market
+15,Green Bay Packers,GB,Miami Dolphins,MIA,home,-650,83.16,Miami Dolphins at Green Bay Packers,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Houston Texans,HOU,Jacksonville Jaguars,JAX,home,-155,58.30,Jacksonville Jaguars at Houston Texans,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Indianapolis Colts,IND,Tennessee Titans,TEN,away,-125,53.25,Indianapolis Colts at Tennessee Titans,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Jacksonville Jaguars,JAX,Houston Texans,HOU,away,+130,41.70,Jacksonville Jaguars at Houston Texans,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Kansas City Chiefs,KC,New England Patriots,NE,home,-142,56.35,New England Patriots at Kansas City Chiefs,2026-12-22T01:15Z,DraftKings,Scheduled,market
+15,Las Vegas Raiders,LV,Denver Broncos,DEN,home,+170,35.53,Denver Broncos at Las Vegas Raiders,2026-12-20T21:25Z,DraftKings,Scheduled,market
+15,Los Angeles Chargers,LAC,San Francisco 49ers,SF,home,-142,56.35,San Francisco 49ers at Los Angeles Chargers,2026-12-18T01:15Z,DraftKings,Scheduled,market
+15,Los Angeles Rams,LAR,Dallas Cowboys,DAL,home,-245,68.06,Dallas Cowboys at Los Angeles Rams,2026-12-20T21:25Z,DraftKings,Scheduled,market
+15,Miami Dolphins,MIA,Green Bay Packers,GB,away,+470,16.84,Miami Dolphins at Green Bay Packers,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Minnesota Vikings,MIN,Detroit Lions,DET,home,+105,46.75,Detroit Lions at Minnesota Vikings,2026-12-21T01:20Z,DraftKings,Scheduled,market
+15,New England Patriots,NE,Kansas City Chiefs,KC,away,+120,43.65,New England Patriots at Kansas City Chiefs,2026-12-22T01:15Z,DraftKings,Scheduled,market
+15,New Orleans Saints,NO,Tampa Bay Buccaneers,TB,away,+164,36.31,New Orleans Saints at Tampa Bay Buccaneers,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,New York Giants,NYG,Cleveland Browns,CLE,home,-205,64.47,Cleveland Browns at New York Giants,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,New York Jets,NYJ,Arizona Cardinals,ARI,away,-110,50.00,New York Jets at Arizona Cardinals,2026-12-20T21:05Z,DraftKings,Scheduled,market
+15,Philadelphia Eagles,PHI,Seattle Seahawks,SEA,home,-125,53.25,Seattle Seahawks at Philadelphia Eagles,2026-12-19T22:00Z,DraftKings,Scheduled,market
+15,Pittsburgh Steelers,PIT,Baltimore Ravens,BAL,home,+124,42.79,Baltimore Ravens at Pittsburgh Steelers,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,San Francisco 49ers,SF,Los Angeles Chargers,LAC,away,+120,43.65,San Francisco 49ers at Los Angeles Chargers,2026-12-18T01:15Z,DraftKings,Scheduled,market
+15,Seattle Seahawks,SEA,Philadelphia Eagles,PHI,away,+105,46.75,Seattle Seahawks at Philadelphia Eagles,2026-12-19T22:00Z,DraftKings,Scheduled,market
+15,Tampa Bay Buccaneers,TB,New Orleans Saints,NO,home,-198,63.69,New Orleans Saints at Tampa Bay Buccaneers,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Tennessee Titans,TEN,Indianapolis Colts,IND,home,+105,46.75,Indianapolis Colts at Tennessee Titans,2026-12-20T18:00Z,DraftKings,Scheduled,market
+15,Washington Commanders,WSH,Atlanta Falcons,ATL,home,-185,62.25,Atlanta Falcons at Washington Commanders,2026-12-20T18:00Z,DraftKings,Scheduled,market
+16,Arizona Cardinals,ARI,New Orleans Saints,NO,away,+200,31.94,Arizona Cardinals at New Orleans Saints,2026-12-27T18:00Z,DraftKings,Scheduled,market
+16,Atlanta Falcons,ATL,Tampa Bay Buccaneers,TB,home,+105,46.75,Tampa Bay Buccaneers at Atlanta Falcons,2026-12-27T05:00Z,DraftKings,Scheduled,market
+16,Baltimore Ravens,BAL,Cleveland Browns,CLE,home,-410,77.15,Cleveland Browns at Baltimore Ravens,2026-12-27T18:00Z,DraftKings,Scheduled,market
+16,Buffalo Bills,BUF,Denver Broncos,DEN,away,-130,54.27,Buffalo Bills at Denver Broncos,2026-12-25T21:30Z,DraftKings,Scheduled,market
+16,Carolina Panthers,CAR,Pittsburgh Steelers,PIT,away,+160,36.91,Carolina Panthers at Pittsburgh Steelers,2026-12-27T05:00Z,DraftKings,Scheduled,market
+16,Chicago Bears,CHI,Green Bay Packers,GB,home,-118,51.74,Green Bay Packers at Chicago Bears,2026-12-25T18:00Z,DraftKings,Scheduled,market
+16,Cincinnati Bengals,CIN,Indianapolis Colts,IND,away,-122,52.61,Cincinnati Bengals at Indianapolis Colts,2026-12-27T05:00Z,DraftKings,Scheduled,market
+16,Cleveland Browns,CLE,Baltimore Ravens,BAL,away,+320,22.85,Cleveland Browns at Baltimore Ravens,2026-12-27T18:00Z,DraftKings,Scheduled,market
+16,Dallas Cowboys,DAL,Jacksonville Jaguars,JAX,home,-162,59.34,Jacksonville Jaguars at Dallas Cowboys,2026-12-28T01:20Z,DraftKings,Scheduled,market
+16,Denver Broncos,DEN,Buffalo Bills,BUF,home,+110,45.73,Buffalo Bills at Denver Broncos,2026-12-25T21:30Z,DraftKings,Scheduled,market
+16,Detroit Lions,DET,New York Giants,NYG,home,-205,64.47,New York Giants at Detroit Lions,2026-12-29T01:15Z,DraftKings,Scheduled,market
+16,Green Bay Packers,GB,Chicago Bears,CHI,away,-102,48.26,Green Bay Packers at Chicago Bears,2026-12-25T18:00Z,DraftKings,Scheduled,market
+16,Houston Texans,HOU,Philadelphia Eagles,PHI,away,+114,44.86,Houston Texans at Philadelphia Eagles,2026-12-25T01:15Z,DraftKings,Scheduled,market
+16,Indianapolis Colts,IND,Cincinnati Bengals,CIN,home,+102,47.39,Cincinnati Bengals at Indianapolis Colts,2026-12-27T05:00Z,DraftKings,Scheduled,market
+16,Jacksonville Jaguars,JAX,Dallas Cowboys,DAL,away,+136,40.66,Jacksonville Jaguars at Dallas Cowboys,2026-12-28T01:20Z,DraftKings,Scheduled,market
+16,Kansas City Chiefs,KC,San Francisco 49ers,SF,home,-155,58.30,San Francisco 49ers at Kansas City Chiefs,2026-12-27T21:25Z,DraftKings,Scheduled,market
+16,Las Vegas Raiders,LV,Tennessee Titans,TEN,home,-122,52.61,Tennessee Titans at Las Vegas Raiders,2026-12-27T21:05Z,DraftKings,Scheduled,market
+16,Los Angeles Chargers,LAC,Miami Dolphins,MIA,away,-375,75.72,Los Angeles Chargers at Miami Dolphins,2026-12-27T18:00Z,DraftKings,Scheduled,market
+16,Los Angeles Rams,LAR,Seattle Seahawks,SEA,away,+110,45.73,Los Angeles Rams at Seattle Seahawks,2026-12-26T01:15Z,DraftKings,Scheduled,market
+16,Miami Dolphins,MIA,Los Angeles Chargers,LAC,home,+295,24.28,Los Angeles Chargers at Miami Dolphins,2026-12-27T18:00Z,DraftKings,Scheduled,market
+16,Minnesota Vikings,MIN,Washington Commanders,WSH,home,-135,55.14,Washington Commanders at Minnesota Vikings,2026-12-27T05:00Z,DraftKings,Scheduled,market
+16,New England Patriots,NE,New York Jets,NYJ,away,-270,70.02,New England Patriots at New York Jets,2026-12-27T18:00Z,DraftKings,Scheduled,market
+16,New Orleans Saints,NO,Arizona Cardinals,ARI,home,-245,68.06,Arizona Cardinals at New Orleans Saints,2026-12-27T18:00Z,DraftKings,Scheduled,market
+16,New York Giants,NYG,Detroit Lions,DET,away,+170,35.53,New York Giants at Detroit Lions,2026-12-29T01:15Z,DraftKings,Scheduled,market
+16,New York Jets,NYJ,New England Patriots,NE,home,+220,29.98,New England Patriots at New York Jets,2026-12-27T18:00Z,DraftKings,Scheduled,market
+16,Philadelphia Eagles,PHI,Houston Texans,HOU,home,-135,55.14,Houston Texans at Philadelphia Eagles,2026-12-25T01:15Z,DraftKings,Scheduled,market
+16,Pittsburgh Steelers,PIT,Carolina Panthers,CAR,home,-192,63.09,Carolina Panthers at Pittsburgh Steelers,2026-12-27T05:00Z,DraftKings,Scheduled,market
+16,San Francisco 49ers,SF,Kansas City Chiefs,KC,away,+130,41.70,San Francisco 49ers at Kansas City Chiefs,2026-12-27T21:25Z,DraftKings,Scheduled,market
+16,Seattle Seahawks,SEA,Los Angeles Rams,LAR,home,-130,54.27,Los Angeles Rams at Seattle Seahawks,2026-12-26T01:15Z,DraftKings,Scheduled,market
+16,Tampa Bay Buccaneers,TB,Atlanta Falcons,ATL,away,-125,53.25,Tampa Bay Buccaneers at Atlanta Falcons,2026-12-27T05:00Z,DraftKings,Scheduled,market
+16,Tennessee Titans,TEN,Las Vegas Raiders,LV,away,+102,47.39,Tennessee Titans at Las Vegas Raiders,2026-12-27T21:05Z,DraftKings,Scheduled,market
+16,Washington Commanders,WSH,Minnesota Vikings,MIN,away,+114,44.86,Washington Commanders at Minnesota Vikings,2026-12-27T05:00Z,DraftKings,Scheduled,market
+17,Arizona Cardinals,ARI,Las Vegas Raiders,LV,home,+110,45.73,Las Vegas Raiders at Arizona Cardinals,2027-01-03T21:05Z,DraftKings,Scheduled,market
+17,Atlanta Falcons,ATL,New Orleans Saints,NO,home,-122,52.61,New Orleans Saints at Atlanta Falcons,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Baltimore Ravens,BAL,Cincinnati Bengals,CIN,away,+114,44.86,Baltimore Ravens at Cincinnati Bengals,2027-01-01T01:15Z,DraftKings,Scheduled,market
+17,Buffalo Bills,BUF,Miami Dolphins,MIA,away,-380,76.00,Buffalo Bills at Miami Dolphins,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Carolina Panthers,CAR,Seattle Seahawks,SEA,home,+200,31.94,Seattle Seahawks at Carolina Panthers,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Chicago Bears,CHI,Detroit Lions,DET,home,-125,53.25,Detroit Lions at Chicago Bears,2027-01-03T21:25Z,DraftKings,Scheduled,market
+17,Cincinnati Bengals,CIN,Baltimore Ravens,BAL,home,-135,55.14,Baltimore Ravens at Cincinnati Bengals,2027-01-01T01:15Z,DraftKings,Scheduled,market
+17,Cleveland Browns,CLE,Indianapolis Colts,IND,home,+114,44.86,Indianapolis Colts at Cleveland Browns,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Dallas Cowboys,DAL,New York Giants,NYG,home,-218,65.75,New York Giants at Dallas Cowboys,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Denver Broncos,DEN,New England Patriots,NE,away,+114,44.86,Denver Broncos at New England Patriots,2027-01-03T05:00Z,DraftKings,Scheduled,market
+17,Detroit Lions,DET,Chicago Bears,CHI,away,+105,46.75,Detroit Lions at Chicago Bears,2027-01-03T21:25Z,DraftKings,Scheduled,market
+17,Green Bay Packers,GB,Houston Texans,HOU,home,-135,55.14,Houston Texans at Green Bay Packers,2027-01-05T01:15Z,DraftKings,Scheduled,market
+17,Houston Texans,HOU,Green Bay Packers,GB,away,+114,44.86,Houston Texans at Green Bay Packers,2027-01-05T01:15Z,DraftKings,Scheduled,market
+17,Indianapolis Colts,IND,Cleveland Browns,CLE,away,-135,55.14,Indianapolis Colts at Cleveland Browns,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Jacksonville Jaguars,JAX,Washington Commanders,WSH,home,-185,62.25,Washington Commanders at Jacksonville Jaguars,2027-01-03T05:00Z,DraftKings,Scheduled,market
+17,Kansas City Chiefs,KC,Los Angeles Chargers,LAC,away,+105,46.75,Kansas City Chiefs at Los Angeles Chargers,2027-01-03T05:00Z,DraftKings,Scheduled,market
+17,Las Vegas Raiders,LV,Arizona Cardinals,ARI,away,-130,54.27,Las Vegas Raiders at Arizona Cardinals,2027-01-03T21:05Z,DraftKings,Scheduled,market
+17,Los Angeles Chargers,LAC,Kansas City Chiefs,KC,home,-125,53.25,Kansas City Chiefs at Los Angeles Chargers,2027-01-03T05:00Z,DraftKings,Scheduled,market
+17,Los Angeles Rams,LAR,Tampa Bay Buccaneers,TB,away,-205,64.47,Los Angeles Rams at Tampa Bay Buccaneers,2027-01-03T05:00Z,DraftKings,Scheduled,market
+17,Miami Dolphins,MIA,Buffalo Bills,BUF,home,+300,24.00,Buffalo Bills at Miami Dolphins,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Minnesota Vikings,MIN,New York Jets,NYJ,away,-185,62.25,Minnesota Vikings at New York Jets,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,New England Patriots,NE,Denver Broncos,DEN,home,-135,55.14,Denver Broncos at New England Patriots,2027-01-03T05:00Z,DraftKings,Scheduled,market
+17,New Orleans Saints,NO,Atlanta Falcons,ATL,away,+102,47.39,New Orleans Saints at Atlanta Falcons,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,New York Giants,NYG,Dallas Cowboys,DAL,away,+180,34.25,New York Giants at Dallas Cowboys,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,New York Jets,NYJ,Minnesota Vikings,MIN,home,+154,37.75,Minnesota Vikings at New York Jets,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Philadelphia Eagles,PHI,San Francisco 49ers,SF,away,+105,46.75,Philadelphia Eagles at San Francisco 49ers,2027-01-04T01:20Z,DraftKings,Scheduled,market
+17,Pittsburgh Steelers,PIT,Tennessee Titans,TEN,away,-122,52.61,Pittsburgh Steelers at Tennessee Titans,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,San Francisco 49ers,SF,Philadelphia Eagles,PHI,home,-125,53.25,Philadelphia Eagles at San Francisco 49ers,2027-01-04T01:20Z,DraftKings,Scheduled,market
+17,Seattle Seahawks,SEA,Carolina Panthers,CAR,away,-245,68.06,Seattle Seahawks at Carolina Panthers,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Tampa Bay Buccaneers,TB,Los Angeles Rams,LAR,home,+170,35.53,Los Angeles Rams at Tampa Bay Buccaneers,2027-01-03T05:00Z,DraftKings,Scheduled,market
+17,Tennessee Titans,TEN,Pittsburgh Steelers,PIT,home,+102,47.39,Pittsburgh Steelers at Tennessee Titans,2027-01-03T18:00Z,DraftKings,Scheduled,market
+17,Washington Commanders,WSH,Jacksonville Jaguars,JAX,away,+154,37.75,Washington Commanders at Jacksonville Jaguars,2027-01-03T05:00Z,DraftKings,Scheduled,market
+18,Arizona Cardinals,ARI,San Francisco 49ers,SF,home,+330,22.32,San Francisco 49ers at Arizona Cardinals,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Atlanta Falcons,ATL,Carolina Panthers,CAR,away,+114,44.86,Atlanta Falcons at Carolina Panthers,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Baltimore Ravens,BAL,Pittsburgh Steelers,PIT,home,-225,66.36,Pittsburgh Steelers at Baltimore Ravens,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Buffalo Bills,BUF,New York Jets,NYJ,home,-470,79.14,New York Jets at Buffalo Bills,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Carolina Panthers,CAR,Atlanta Falcons,ATL,home,-135,55.14,Atlanta Falcons at Carolina Panthers,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Chicago Bears,CHI,Minnesota Vikings,MIN,away,+105,46.75,Chicago Bears at Minnesota Vikings,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Cincinnati Bengals,CIN,Cleveland Browns,CLE,home,-355,74.78,Cleveland Browns at Cincinnati Bengals,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Cleveland Browns,CLE,Cincinnati Bengals,CIN,away,+280,25.22,Cleveland Browns at Cincinnati Bengals,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Dallas Cowboys,DAL,Washington Commanders,WSH,away,-122,52.61,Dallas Cowboys at Washington Commanders,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Denver Broncos,DEN,Los Angeles Chargers,LAC,home,-122,52.61,Los Angeles Chargers at Denver Broncos,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Detroit Lions,DET,Green Bay Packers,GB,away,+114,44.86,Detroit Lions at Green Bay Packers,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Green Bay Packers,GB,Detroit Lions,DET,home,-135,55.14,Detroit Lions at Green Bay Packers,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Houston Texans,HOU,Tennessee Titans,TEN,home,-298,71.80,Tennessee Titans at Houston Texans,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Indianapolis Colts,IND,Jacksonville Jaguars,JAX,home,-122,52.61,Jacksonville Jaguars at Indianapolis Colts,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Jacksonville Jaguars,JAX,Indianapolis Colts,IND,away,+102,47.39,Jacksonville Jaguars at Indianapolis Colts,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Kansas City Chiefs,KC,Las Vegas Raiders,LV,home,-380,76.00,Las Vegas Raiders at Kansas City Chiefs,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Las Vegas Raiders,LV,Kansas City Chiefs,KC,away,+300,24.00,Las Vegas Raiders at Kansas City Chiefs,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Los Angeles Chargers,LAC,Denver Broncos,DEN,away,+102,47.39,Los Angeles Chargers at Denver Broncos,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Los Angeles Rams,LAR,Seattle Seahawks,SEA,home,-162,59.34,Seattle Seahawks at Los Angeles Rams,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Miami Dolphins,MIA,New England Patriots,NE,away,+425,18.27,Miami Dolphins at New England Patriots,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Minnesota Vikings,MIN,Chicago Bears,CHI,home,-125,53.25,Chicago Bears at Minnesota Vikings,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,New England Patriots,NE,Miami Dolphins,MIA,home,-575,81.73,Miami Dolphins at New England Patriots,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,New Orleans Saints,NO,Tampa Bay Buccaneers,TB,home,+105,46.75,Tampa Bay Buccaneers at New Orleans Saints,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,New York Giants,NYG,Philadelphia Eagles,PHI,home,+136,40.66,Philadelphia Eagles at New York Giants,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,New York Jets,NYJ,Buffalo Bills,BUF,away,+360,20.86,New York Jets at Buffalo Bills,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Philadelphia Eagles,PHI,New York Giants,NYG,away,-162,59.34,Philadelphia Eagles at New York Giants,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Pittsburgh Steelers,PIT,Baltimore Ravens,BAL,away,+185,33.64,Pittsburgh Steelers at Baltimore Ravens,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,San Francisco 49ers,SF,Arizona Cardinals,ARI,away,-425,77.68,San Francisco 49ers at Arizona Cardinals,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Seattle Seahawks,SEA,Los Angeles Rams,LAR,away,+136,40.66,Seattle Seahawks at Los Angeles Rams,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Tampa Bay Buccaneers,TB,New Orleans Saints,NO,away,-125,53.25,Tampa Bay Buccaneers at New Orleans Saints,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Tennessee Titans,TEN,Houston Texans,HOU,away,+240,28.20,Tennessee Titans at Houston Texans,2027-01-10T05:00Z,DraftKings,Scheduled,market
+18,Washington Commanders,WSH,Dallas Cowboys,DAL,home,+102,47.39,Dallas Cowboys at Washington Commanders,2027-01-10T05:00Z,DraftKings,Scheduled,market

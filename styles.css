@@ -497,6 +497,14 @@ h1 {
   font-weight: 600;
 }
 
+.prob .src {
+  margin-left: 4px;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--gold-dim);
+}
+
 .match {
   color: var(--mute);
   font-size: 11px;

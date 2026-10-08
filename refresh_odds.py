@@ -120,6 +120,48 @@ def fetch_event_odds(event_id: str):
         return event_id, {"error": str(exc)}
 
 
+def fetch_predictor(event_id: str):
+    url = (
+        "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/"
+        f"events/{event_id}/competitions/{event_id}/predictor"
+    )
+    try:
+        return event_id, get_json(url)
+    except Exception as exc:
+        return event_id, {"error": str(exc)}
+
+
+def predictor_stat(side, name):
+    for item in (side or {}).get("statistics") or []:
+        if item.get("name") == name and item.get("value") is not None:
+            return float(item["value"])
+    return None
+
+
+def predictor_probs(payload):
+    home = predictor_stat(payload.get("homeTeam"), "gameProjection")
+    away = predictor_stat(payload.get("awayTeam"), "gameProjection")
+    if home is None or away is None:
+        return None, None
+    total = home + away
+    if total <= 0:
+        return None, None
+    home_pct = round((home / total) * 100, 2)
+    return home_pct, round(100 - home_pct, 2)
+
+
+def two_sided_ml(payload):
+    items = (payload or {}).get("items") or []
+    if not items:
+        return None, None
+    odds = items[0]
+    home = ml_from_core(odds.get("homeTeamOdds"))
+    away = ml_from_core(odds.get("awayTeamOdds"))
+    if parse_ml(home) is None or parse_ml(away) is None:
+        return None, None
+    return home, away
+
+
 def competitors(comp):
     by_ha = {c.get("homeAway"): c for c in (comp.get("competitors") or [])}
     return by_ha.get("home"), by_ha.get("away")
@@ -145,6 +187,7 @@ def row_from_sides(week, game, date, status, book, home, away, ml_home, ml_away)
                 "game_date": date,
                 "sportsbook": book,
                 "status": status,
+                "source": "",
             }
         )
     return rows
@@ -169,7 +212,9 @@ def apply_devig(rows):
         total = p1 + p2
         pct1 = round((p1 / total) * 100, 2)
         rows[idxs[0]]["win_probability"] = f"{pct1:.2f}"
+        rows[idxs[0]]["source"] = "market"
         rows[idxs[1]]["win_probability"] = f"{100 - pct1:.2f}"
+        rows[idxs[1]]["source"] = "market"
 
 
 def current_week():
@@ -232,6 +277,7 @@ def refresh():
             event_id, payload = fut.result()
             odds_by_id[event_id] = payload
 
+    need_pred = []
     for ev in events:
         payload = odds_by_id.get(ev["id"]) or {}
         items = payload.get("items") or []
@@ -240,8 +286,10 @@ def refresh():
         if items:
             odds = items[0]
             book = (odds.get("provider") or {}).get("name") or ""
-            ml_home = ml_from_core(odds.get("homeTeamOdds"))
-            ml_away = ml_from_core(odds.get("awayTeamOdds"))
+            ml_home, ml_away = two_sided_ml(payload)
+        if ml_home is None or ml_away is None:
+            need_pred.append(ev["id"])
+            ml_home = ml_away = None
         add_rows(
             row_from_sides(
                 ev["week"],
@@ -277,11 +325,37 @@ def refresh():
                             "game_date": "",
                             "sportsbook": "",
                             "status": "Bye",
+                            "source": "",
                         }
                     ]
                 )
 
     apply_devig(rows)
+
+    pred_by_id = {}
+    if need_pred:
+        with ThreadPoolExecutor(max_workers=10) as pool:
+            futs = [pool.submit(fetch_predictor, event_id) for event_id in need_pred]
+            for fut in as_completed(futs):
+                event_id, payload = fut.result()
+                pred_by_id[event_id] = payload
+
+        by_key = {(row["week"], row["team_abbr"]): row for row in rows}
+        for ev in events:
+            if ev["id"] not in pred_by_id:
+                continue
+            home_p, away_p = predictor_probs(pred_by_id[ev["id"]])
+            if home_p is None:
+                continue
+            home_abbr = ((ev["home"] or {}).get("team") or {}).get("abbreviation")
+            away_abbr = ((ev["away"] or {}).get("team") or {}).get("abbreviation")
+            for abbr, prob in ((home_abbr, home_p), (away_abbr, away_p)):
+                row = by_key.get((ev["week"], abbr))
+                if not row or row["win_probability"]:
+                    continue
+                row["win_probability"] = f"{prob:.2f}"
+                row["sportsbook"] = row["sportsbook"] or "ESPN FPI"
+                row["source"] = "fpi"
     rows.sort(key=lambda r: (r["week"], r["team"] or "", r["team_abbr"] or ""))
 
     fieldnames = [
@@ -297,6 +371,7 @@ def refresh():
         "game_date",
         "sportsbook",
         "status",
+        "source",
     ]
     with (ROOT / "nfl_weekly_win_odds.csv").open("w", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore")
@@ -320,6 +395,7 @@ def refresh():
                 "game": row["game"],
                 "gameDate": row["game_date"],
                 "status": row["status"],
+                "source": row.get("source") or "",
             }
         )
 
@@ -327,7 +403,7 @@ def refresh():
         "season": SEASON,
         "currentWeek": now_week,
         "updatedAt": datetime.now(timezone.utc).isoformat(),
-        "source": "ESPN / DraftKings moneylines, multiplicative de-vig",
+        "source": "DraftKings moneylines (de-vig) when posted; ESPN FPI otherwise",
         "weeks": weeks,
     }
     (ROOT / "odds.json").write_text(json.dumps(payload))

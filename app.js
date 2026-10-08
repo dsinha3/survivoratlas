@@ -341,6 +341,17 @@ function pickProb(abbr, week) {
   return byTeamWeek[abbr]?.[week]?.winProbability ?? null;
 }
 
+function weekSource(week) {
+  const rows = (data.weeks[week] || data.weeks[String(week)] || []).filter(
+    (row) => row.status !== "Bye" && row.opponent !== "BYE"
+  );
+  if (!rows.length) return "";
+  const fpi = rows.filter((row) => row.source === "fpi").length;
+  if (fpi === rows.length) return "fpi";
+  if (fpi) return "mixed";
+  return "market";
+}
+
 function renderPath() {
   const live = liveWeeks();
   const n = livePicks().length;
@@ -396,13 +407,13 @@ function renderMap() {
       const focus = week === state.focusWeek ? "is-focus" : "";
       const dbl = DOUBLE_WEEKS.has(week) ? "is-double" : "";
       const picks = weekPicks(week);
+      const src = weekSource(week);
+      const kind = DOUBLE_WEEKS.has(week) ? "2x" : src === "fpi" ? "FPI" : "prob";
       const sub = !state.sortMeta && week === state.sortWeek
-        ? `${arrow} ${DOUBLE_WEEKS.has(week) ? "2x" : "prob"}`
+        ? `${arrow} ${kind}`
         : picks.length
           ? picks.join(" / ")
-          : DOUBLE_WEEKS.has(week)
-            ? "2x"
-            : "prob";
+          : kind;
       return `
         <th class="week-col ${on} ${now} ${focus} ${dbl}" id="col-${week}">
           <button type="button" data-sort-week="${week}" aria-label="Sort by week ${week} probability">
@@ -453,13 +464,14 @@ function renderMap() {
           ]
             .filter(Boolean)
             .join(" ");
+          const fpi = cell?.source === "fpi";
           const label = bye
             ? "Bye week"
             : fin
               ? `${team.abbr} week ${week} already final`
               : pickHere
                 ? `Remove ${team.abbr} from week ${week}`
-                : `Pick ${team.abbr} in week ${week}`;
+                : `Pick ${team.abbr} in week ${week}${fpi ? " (ESPN FPI)" : ""}`;
           return `
             <td>
               <button
@@ -470,7 +482,7 @@ function renderMap() {
                 ${blocked ? "disabled" : ""}
                 aria-label="${label}"
               >
-                <span class="prob">${formatProb(cell.winProbability)}</span>
+                <span class="prob">${formatProb(cell.winProbability)}${fpi ? `<small class="src">FPI</small>` : ""}</span>
                 <span class="match">${vsLine(cell)}</span>
               </button>
             </td>
@@ -659,7 +671,8 @@ function showUpdated(iso) {
     return;
   }
   const when = new Date(iso);
-  el.textContent = `Lines ${when.toLocaleString()}`;
+  const src = data?.source?.includes("FPI") ? " · FPI for later weeks" : "";
+  el.textContent = `Lines ${when.toLocaleString()}${src}`;
 }
 
 async function refreshOdds() {

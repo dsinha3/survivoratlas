@@ -47,6 +47,32 @@ function mlFromCore(teamOdds) {
   return teamOdds.moneyLine ?? null;
 }
 
+function twoSidedMl(payload) {
+  const items = payload?.items || [];
+  if (!items[0]) return [null, null];
+  const home = mlFromCore(items[0].homeTeamOdds);
+  const away = mlFromCore(items[0].awayTeamOdds);
+  if (parseMl(home) == null || parseMl(away) == null) return [null, null];
+  return [home, away];
+}
+
+function predictorStat(side, name) {
+  for (const item of side?.statistics || []) {
+    if (item.name === name && item.value != null) return Number(item.value);
+  }
+  return null;
+}
+
+function predictorProbs(payload) {
+  const home = predictorStat(payload?.homeTeam, "gameProjection");
+  const away = predictorStat(payload?.awayTeam, "gameProjection");
+  if (home == null || away == null) return [null, null];
+  const total = home + away;
+  if (total <= 0) return [null, null];
+  const homePct = Math.round((home / total) * 10000) / 100;
+  return [homePct, Math.round((100 - homePct) * 100) / 100];
+}
+
 function competitors(comp) {
   const byHa = {};
   for (const c of comp.competitors || []) byHa[c.homeAway] = c;
@@ -158,18 +184,25 @@ async function scrapeOdds() {
       game,
       gameDate: date,
       status,
+      source: "",
     });
   };
 
+  const needPred = [];
   for (const ev of events) {
-    const items = oddsById[ev.id]?.items || [];
+    const payload = oddsById[ev.id] || {};
+    const items = payload.items || [];
     let book = "";
     let mlHome = null;
     let mlAway = null;
     if (items[0]) {
       book = items[0].provider?.name || "";
-      mlHome = mlFromCore(items[0].homeTeamOdds);
-      mlAway = mlFromCore(items[0].awayTeamOdds);
+      [mlHome, mlAway] = twoSidedMl(payload);
+    }
+    if (mlHome == null || mlAway == null) {
+      needPred.push(ev.id);
+      mlHome = null;
+      mlAway = null;
     }
     sideRow(ev.week, ev.game, ev.date, ev.status, book, ev.home, ev.away, mlHome, "home");
     sideRow(ev.week, ev.game, ev.date, ev.status, book, ev.away, ev.home, mlAway, "away");
@@ -192,6 +225,7 @@ async function scrapeOdds() {
           game: "",
           gameDate: "",
           status: "Bye",
+          source: "",
         });
       }
     }
@@ -211,7 +245,39 @@ async function scrapeOdds() {
     const p2 = implied(mls[1]);
     const pct1 = Math.round((p1 / (p1 + p2)) * 10000) / 100;
     rows[idxs[0]].winProbability = pct1;
+    rows[idxs[0]].source = "market";
     rows[idxs[1]].winProbability = Math.round((100 - pct1) * 100) / 100;
+    rows[idxs[1]].source = "market";
+  }
+
+  if (needPred.length) {
+    const predById = {};
+    await mapPool(needPred, 12, async (id) => {
+      try {
+        predById[id] = await getJson(
+          `https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/${id}/competitions/${id}/predictor`
+        );
+      } catch (err) {
+        predById[id] = { error: String(err.message || err) };
+      }
+    });
+    const byKey = {};
+    for (const row of rows) byKey[`${row.week}:${row.abbr}`] = row;
+    for (const ev of events) {
+      const [homeP, awayP] = predictorProbs(predById[ev.id]);
+      if (homeP == null) continue;
+      const sides = [
+        [ev.home?.team?.abbreviation, homeP],
+        [ev.away?.team?.abbreviation, awayP],
+      ];
+      for (const [abbr, prob] of sides) {
+        const row = byKey[`${ev.week}:${abbr}`];
+        if (!row || row.winProbability != null) continue;
+        row.winProbability = prob;
+        row.sportsbook = row.sportsbook || "ESPN FPI";
+        row.source = "fpi";
+      }
+    }
   }
 
   rows.sort((a, b) => a.week - b.week || (a.team || "").localeCompare(b.team || "") || (a.abbr || "").localeCompare(b.abbr || ""));
@@ -226,7 +292,7 @@ async function scrapeOdds() {
     season: SEASON,
     currentWeek,
     updatedAt: new Date().toISOString(),
-    source: "ESPN / DraftKings moneylines, multiplicative de-vig",
+    source: "DraftKings moneylines (de-vig) when posted; ESPN FPI otherwise",
     weeks,
   };
 }
